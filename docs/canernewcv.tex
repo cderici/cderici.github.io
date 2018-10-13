@@ -1,0 +1,254 @@
+%% start of file `template_en.tex'.
+%% Copyright 2007 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[black]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\AtBeginDocument{\recomputelengths}                             % required when changes are made to page layout lengths
+
+\AfterPreamble{\hypersetup{
+  pdfauthor={Caner Derici},
+  pdftitle={CV for Caner Derici},
+  pdfsubject={Detailed CV for Caner},
+  urlcolor=blue,
+}}
+
+% personal data
+\firstname{Caner}
+\familyname{Derici}
+\title{Computer Scientist \newline \small \href{http://caner.derici.me}{http://caner.derici.me}}               % optional, remove the line if not wantedx optional, remove the line if not wanted
+\mobile{+90 506 307 82 87}                    % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{caner.derici at boun.edu.tr}                      % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+% \quote{``Wir mÃ¼ssen wissen! Wir werden wissen!'' Hilbert, 1900}                 % optional, remove the line if not wanted
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{2014--}{PhD}{\href{http://www.cmpe.boun.edu.tr}{Boğaziçi University}}{Computer Engineering Department}{}{}
+\cventry{2011--2014}{MSc}{\href{http://www.cmpe.boun.edu.tr}{Boğaziçi University}}{Computer Engineering Department}{\textit{3.38}}{}
+\cventry{2005--2010}{BSc}{\href{http://www.bilgi.edu.tr}{Istanbul Bilgi University}}{Computer Science Department}{\textit{2.78}}
+{Concentrated on computational theory and programming language theory \& implementation.}  % arguments 3 to 6 are optional
+\cventry{2001--2005}{\small High School}{\href{http://www.ademtolunay.com}{Adem Tolunay Anadolu Lisesi}}{Antalya}{}{}  % arguments 3 to 6 are optional
+
+\section{MSc Thesis}
+\cvline{title}{\emph{Question Analysis and Information Retrieval For a
+    Turkish Question Answering System: HazırCevap}}
+\cvline{supervisors}{\href{http://www.cmpe.boun.edu.tr/~gungort/}{Prof. Tunga
+    Güngör},
+  \href{http://www.cmpe.boun.edu.tr/~ozgur/}{Assoc. Prof. Arzucan
+    Özgür}, Prof. Günizi Kartal} \cvline{description}{\small This
+  study describes and evaluates the techniques we developed for the
+  question analysis and information retrieval (IR) module of a
+  closed-domain Turkish factoid Question Answering (QA) system that is
+  intended for high-school students to support their education. We
+  propose novel methods for two major problems in question analysis,
+  namely focus extraction and question classification, based on
+  integrating a rule-based and a Hidden Markov Model (HMM) based
+  sequence classification approach, both of which make use of the
+  dependency relations among the words in the question. We also built
+  an IR module that searches for the relevant documents and passages
+  through the combined use of search engines Indri and Apache Lucene.}
+
+\section{Undergraduate Thesis}
+\cvline{title}{\emph{Proper Tail Calls From First-Class Continuations in JavaScript}}
+\cvline{supervisors}{\href{http://cs.bilgi.edu.tr/pages/academic_staff/lecturers/chris_stephenson/}{Chris Stephenson}, 
+\href{http://cs.brown.edu/~sk}{Prof. Shriram Krishnamurthi}, Prof. Alpaslan Parlakçı, Matthew Edwards}
+\cvline{description}{\small This study demonstrates that a proper tail-calling behavior on Javascript is possible while refraining from any modification on interpreter. It is based on the paper titled Continuations from Generalized Stack Inspection, Pettyjohn et al., in which a novel program transformation is presented for Javascript programs to obtain first-class continuations from exception handling mechanism. My thesis takes it one step further, showing that by using this continuation model on Javascript, achieving a tail-call optimized computation is possible, without ever touching the interpreter.
+}
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}
+
+\section{Seminars \& Talks}
+\cventry{December 2013}{``Natural Langauge Processing Techniques on Tweet Data''}{Inet-tr'13, Internet Technologies in Turkey, Istanbul University}{with Prof. Suzan Üsküdarlı, from SosLab \& Complex Systems Laboratory}{}{}
+\cventry{October 2010}{``Wir m\"{u}ssen wissen! Wir werden wissen!''}{Istanbul Bilgi University}{}{}{}
+\cventry{December 2011}{``Sorulmayan Sorular: Bu yo\'{g}urdu saklasak mı?'' (Turkish)}{Istanbul Bilgi University}{}{}{}
+
+
+
+\section{Experience}
+\subsection{Research Projects}
+\cventry{Feb 2014 - July 2014}{Sessizliğe Oku (Read to Silence)}{Funded by KOÇ Group, joint project with Department of Western Languages \& Literatures.}{Two faculty members from Linguistics department, one from Computer Engineering department, and two research assistants are involved.}{Project aims to develop a stable framework on which the Turkish grammar lectures and exercises for \emph{deaf} people can easily be provided.}{System is specifically designed for deaf people on both PC and mobile devices, can be accessed by : http://fatih.cmpe.boun.edu.tr/demo/template3}
+\cventry{Sep 2013 - July 2015}{HazırCevap}{Government funded project (TUBITAK), a closed domain question answering system for high school students.}{3 faculty members (from different faculties) and 4 grad students are involved.}{This project is my MSc thesis, so I develop pretty much everything with the other grad students}{Preliminaries can be found from : http://fatih.cmpe.boun.edu.tr/questions/ \\ GitHub Repo for question analysis module : https://github.com/cderici/question-analyzer}
+\cventry{Sep 2013 - March 2014}{Direnaj}{Data Collection, Processing and Visualization Framework for real-time social network data}{4 faculty members and 7 grad students are involved.}{I develop parts of the processing library with JavaEE, implementing certain tools used for various kinds of analyses, such as centrality analysis, stopword collection, etc.}{http://direnaj-staging.cmpe.boun.edu.tr/}
+\cventry{2009-2010}{moby-scheme}{Project from Brown University under supervision of Prof. Shriram Krishnamurthi, a compiler from Racket Advanced Student Language to mobile through JS and HTML}{Participated in development of both compiler and runtime libraries. Implemented tail-call optimized computation as I researched it as my undergraduate thesis (see undergraduate Thesis)}{https://github.com/cderici/moby-scheme}{}{}
+\cventry{Fall 2012}{FARS: Functional Automated Reasoning System}{Resolution-refutation style automated theorem prover, written all in PLT Racket by myself, still in development.}{https://github.com/cderici/FARS}{}{}
+
+
+\subsection{Teaching}
+
+\cventry{2011-2012}{Teaching Assistant}{Istanbul Bilgi University}{Istanbul}{}
+{\small \textit{Fall:}
+\begin{itemize}
+ \item \small Cmpe 170 - Algorithms and Programming II
+ \item \small Comp 231 - Data Structures and Algorithms I
+ \item \small Comp 313 - Structure and Interpretation of Computer Programs
+\end{itemize}
+\small \textit{Spring:}
+\begin{itemize}
+ \item \small Comp 180 - Fundamentals of Computer Science II
+ \item \small Comp 314 - Principles of Programming Languages
+ \item \small Comp 382 - Database Systems II (I \emph{lectured} on Data Mining)
+\end{itemize}
+} % arguments 3 to 6 are optional
+
+
+\cventry{Summer 2011}{Instructor}{Taught Lambda Calculus to Math graduate students and ``Programming=Algebra'' to high-school students with Chris Stephenson}{\href{
+http://www.matematikkoyu.org/}{Nesin Math Village}}{Şirince/Selçuk,İzmir}{Turkey}
+
+
+\cventry{2010-2011}{Teaching Assistant}{Istanbul Bilgi University}{Istanbul}{}{
+\small \textit{Fall:}
+\begin{itemize}
+ \item \small Comp 313 - Structure and Interpretation of Computer Programs
+ \item \small Comp 231 - Data Structures and Algorithms I
+ \item \small Cmpe 169 - Algorithms and Programming I
+ \item \small Cmn 167 - Computational and Mathematical Numeracy for Social Scientists I
+\end{itemize}
+\small \textit{Spring:}
+\begin{itemize}
+ \item \small Cmpe 169 - Algorithms and Programming I
+ \item \small Cmpe 170 - Algorithms and Programming II
+ \item \small Comp 314 - Principles of Programming Languages
+\end{itemize}
+}
+
+\cventry{2007-2008}{Student Assistantship}{Istanbul Bilgi University}{Istanbul}{}{
+Lab system maintenance, support in various departmental organizations and projects.
+}
+
+\subsection{Industrial}
+
+\cventry{2012-2013}{Product Development Specialist}{Asseco South-Eastern Europe}{Istanbul}{Worked on developing the back-end of the virtual POS for banks. Used Java, Spring, Tomcat, Mercurial, Oracle}{}
+
+\subsection{Professional Activities}
+
+\cventry{March 2014}{Conference Reviewer}{IEEE $22^{th}$ Conference on Signal Processing and Communication Applications}{Reviewed two full papers on statistical information retrieval.}{SIU 2014}{}
+
+\cventry{April 2014}{Conference Reviewer}{25th International Conference on Computational Linguistics}{Reviewed a paper on question answering systems.}{COLING 2014}{}
+
+\cventry{Fall 2013}{Developer}{Hackathonist'14}{Istanbul}{}{
+We developed a Google Glass application (running on a mock glass API) that talks with the CitySDK, and enables the use of open city data provided by Istanbul Municipality for various smart city tasks (such as finding a suitable bus-route).\\
+GitHub Repo: https://github.com/TheBardak/mirror-api
+}
+
+\cventry{September 2011}{VII. International Conference on Webometrics, Informetrics and Scientometrics (WIS)}{}{Istanbul}{}{
+\small Lead the preparation and compilation of the Book of Abstracts and the Proceedings.
+}
+
+
+
+
+\section{Natural Languages}
+\cvlanguage{Turkish}{ILR Level 5}{Native}
+\cvlanguage{English}{ILR Level 4}{Full English education in both Bilgi \& Boğaziçi. Also did classes entirely in English at Bilgi (see TA). TOEFL results are below.}
+
+\section{Programming Languages}
+\cvlanguage{Racket/\\Scheme/\\LISP}{Excellent}{7 years of extensive experience, wrote a compiler (see Publications), implemented countless number 
+of languages with different characteristics with continuations and macros, studied operational semantics and wrote a dozens of simple games as well as 
+some web applications running on plt-web-server.}
+\cvlanguage{Python}{Advanced}{In both Direnaj and HazırCevap projects (MSc Thesis), coding natural language processing and social semantic analysis algorithms dealing mostly with (dirty) BigData}
+\cvlanguage{Javascript}{Advanced}{Wrote the runtime libraries of The Moby Compiler and WorldWithWeb, along with the code generation modules for WorldWithWeb. Also implemented tail calling behavior on Javascript without modifying the interpreter. (see Undergrad Thesis)}
+\cvlanguage{Java}{Advanced}{Industrial experience. Also developed a simple mobile application on Android platform, implemented a distributed algorithm for a research project.}
+\cvlanguage{Haskell}{Moderate}{Wrote a handful of simple interpreters and various kinds of simple programs.}
+\cvlanguage{C/C++}{Moderate}{Studied computer graphics with OpenGL, developed mobile applications 
+on Bada 1.0 platform and some modules (lexical\&semantic analyzer, code generator) of a compiler.}
+\cvlanguage{Misc.}{Moderate}{SML, SQL, MatLAB, R.}
+
+% \section{Technical Interests}
+% \cvcomputer{Computer Graphics}{Textures, shaders, particle systems and ray-tracing.}{Artificial Intelligence}{Graph-based search algorithms, genetic algorithms and agent based programming.}
+% \cvcomputer{CLI}{Framebuffer applications and kernel based graphics on linux. All kinds of programming on/for the shell in general.}{Chess Programming}{Studying representations(e.g. bitboards) and search extensions.}
+% \cvcomputer{Compilers}{Semantic Analysers, efficient AST generation, a little bit parsing}{Simple Applications}{\TeX~(\LaTeX, Bib\TeX), most common productivity packages (for mostly on Linux platform), Emacs, Eclipse}
+
+\section{Research Interests}
+\cvline{\small Programming Languages}{\small Lambda calculus, partial evaluation, operational semantics \& interpreter design, denotational semantics,  type systems (particularly polymorphic type inference), abstract register machines}
+\cvline{\small Functional Programming}{\small Programming with Continuations, Monad Transformers, Pattern-matching \& Macro Expanders}
+\cvline{\small Natural Langauge Processing}{\small Open/Closed Domain Question Answering Systems, Statistical Parsing \& Part-of-Speech Tagging}
+\cvline{\small Theory of Computation}{\small Interactive Proof Systems, Complexity Theory, Probabilistic Computation}
+
+
+\closesection{}                   % needed to renewcommands
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\section{Awards \& Scholarships}
+\cvlistitem{Research Scholarship for 6 months, funded by KOÇ Group}
+
+\cvlistitem{Research Scholarship for MSc (2 years), fully funded by TUBITAK}
+
+\cvlistitem{Scholarship for a research project on teaching natural languages to hearing impaired. 2014. Funded by KOÇ Foundation.}
+
+\cvlistitem{Student Selection and Placement Center(OSYM) Full Scholarship for BSc, 2005-2010}
+
+\cvlistitem{Best Band Performance \& Second Best Composition at The Musical Contest among high schools in Antalya, Summer 2004}
+
+\section{Personal Interests}
+\cvlistitem{Learning eastern and western languages}
+\cvlistitem{European, Ottoman and Islam history}
+\cvlistitem{Playing and studying chess.}
+
+\cvlistitem{Semi-professional musician, little experience on sound-processing technologies, mix\&mastering, sound-proof musical studio design and building. 11 years of active stage experience, instruments played: (mostly) electric guitar, drums and keyboard. Song arrangements, rhythm patterns and musical intervals, little experience on amateur band coaching.}
+
+\cvlistitem{Tango}
+
+\cvlistitem{Charcoal abstract drawing, see \href{http://caner.derici.me}{my homepage}.}
+
+\cvlistitem{Traveling\&Camping (especially on Mediterranian Region of Turkey, Toros Mountain range)}
+
+\cvlistitem{10 years of Fantasy Role Playing (and dungeon mastering) experience (mostly 3.5eD\&D and AD\&D)}
+
+            % optional other symbol
+
+\section{Standard Tests}
+
+\cventry{11 Sep 2013}{GRE}{}{Istanbul}{}{
+\begin{itemize}
+ \item Quantitative : 161 / 170
+ \item Verbal : 146 / 170
+ \item Analytical Writing : 3.5 / 6
+\end{itemize}
+}
+
+\cventry{27 Sep 2013}{TOEFL IBT}{}{Istanbul}{}{
+Total : 98 / 120
+\begin{itemize}
+ \item Reading : 26 / 30
+ \item Listening : 25 / 30
+ \item Speaking : 23 / 30
+ \item Writing : 24 / 30
+\end{itemize}
+}
+
+% Publications from a BibTeX file
+
+       % 'publications' is the name of a BibTeX file
+\vfill \hfill \small Document last compiled on \today
+\end{document}
+
+
+%% end of file `template_en.tex'.
