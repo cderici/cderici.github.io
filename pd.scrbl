@@ -15,3 +15,5 @@ Kitap ile ilgili açıklama, amaç ve boyut.
 
 @include-section["pd/bolumler/giris.scrbl"]
 @include-section["pd/bolumler/sozdizim.scrbl"]
+@include-section["pd/bolumler/anlam.scrbl"]
+@include-section["pd/bolumler/model.scrbl"]
