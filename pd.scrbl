@@ -42,5 +42,6 @@ sevinirim) pull-request yapabilirsiniz.
 
 @include-section["pd/bolumler/giris.scrbl"]
 @include-section["pd/bolumler/sozdizim.scrbl"]
+@include-section["pd/bolumler/derleme.scrbl"]
 @include-section["pd/bolumler/anlam.scrbl"]
 @include-section["pd/bolumler/model.scrbl"]
