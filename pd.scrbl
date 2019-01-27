@@ -27,8 +27,10 @@ Büyük oranda bu nedenle, ben de bu konuda çalışmak istemiş, ama
 ülkemizde bu konuda çalışan akademik program ve kaynak eksiğinden
 dolayı bunu yapamamış bir kardeşiniz olarak, şimdi Indiana University,
 USA'de programlama dilleri üzerine doktoramı tamamlamaya yaklaşırken,
-hem yukarıda bahsettiğim eksiği gidereyim, hem de kendi çalışmalarımı
-derleyip toparlayayım diye bu kitabı yazmaya başladım.
+hem yukarıda bahsettiğim eksiği gidereyim, bizim de programlama dili
+alanında tamamen özgün ve Türkçe bir kaynağımız olsun, hem de kendi
+çalışmalarımı derleyip toparlayayım istediğim için bu kaynağı
+hazırlamaya başladım.
 
 Bu, her zaman tamamen açık kaynak ve bedava bir kaynak
 olacaktır. Kodlara
