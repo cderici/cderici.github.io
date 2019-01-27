@@ -1,1 +1,6 @@
+compiled/
 *~
+programlamadilleri/*.html
+programlamadilleri/kulminoituva*
+programlamadilleri/manual*
+programlamadilleri/scribble*
