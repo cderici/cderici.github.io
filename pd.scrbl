@@ -13,5 +13,5 @@ Kitap ile ilgili açıklama, amaç ve boyut.
 
 @(table-of-contents)
 
-@include-section["programlamadilleri/bolumler/giris.scrbl"]
-@include-section["programlamadilleri/bolumler/sozdizim.scrbl"]
+@include-section["pd/bolumler/giris.scrbl"]
+@include-section["pd/bolumler/sozdizim.scrbl"]

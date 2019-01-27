@@ -1,14 +1,14 @@
 main:
 	raco scribble --htmls \
-		++extra programlamadilleri/fonts/kulminoituva-webfont.eot \
-		++extra programlamadilleri/fonts/kulminoituva-webfont.svg \
-		++extra programlamadilleri/fonts/kulminoituva-webfont.ttf \
-		++extra programlamadilleri/fonts/kulminoituva-webfont.woff \
+		++extra pd/fonts/kulminoituva-webfont.eot \
+		++extra pd/fonts/kulminoituva-webfont.svg \
+		++extra pd/fonts/kulminoituva-webfont.ttf \
+		++extra pd/fonts/kulminoituva-webfont.woff \
 		++xref-in setup/xref load-collections-xref \
-		programlamadilleri.scrbl
+		pd.scrbl
 
 clean:
-	rm -rf programlamadilleri/*.html
-	rm -rf programlamadilleri/kulminoituva*
-	rm -rf programlamadilleri/manual*
-	rm -rf programlamadilleri/scribble*
+	rm -rf pd/*.html
+	rm -rf pd/kulminoituva*
+	rm -rf pd/manual*
+	rm -rf pd/scribble*
