@@ -1,7 +1,7 @@
 #lang scribble/manual
 
-@title[#:style '(toc unnumbered)]{Sozdizimi}
+@title[#:style '(quiet unnumbered)]{Sozdizimi (Syntax)}
 
 @local-table-of-contents[#:style 'immediate-only]
 
-syntax
+Neden syntax bizim çalışma alanımız değil?

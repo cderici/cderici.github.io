@@ -1,15 +1,9 @@
 #lang scribble/manual
 
-@title[#:style '(toc unnumbered)]{Giris}
+@title[#:style '(quiet unnumbered)]{Giris}
 
 @local-table-of-contents[#:style 'immediate-only]
 
-@section[#:style 'toc]{Hey Intro}
+Programlama dillerini çalışmak ne demek?
 
-hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hedehede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hedehede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede
-
-hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hedehede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hedehede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede
-
-
-hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hedehede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hedehede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede hede
-
+@section{Yazılım ve Araç Gereçler}

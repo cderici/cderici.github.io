@@ -4,15 +4,12 @@
 
 @title[#:tag "top" #:version "1.0" #:style 'toc]{Programlama Dilleri}
 
-@; asdasd asdasd
-
 @author["Caner Derici"]
-
 
 
 @;section[#:style '(unnumbered non-toc)]{Preface}
 
-Programming languages bla bla bla
+Kitap ile ilgili açıklama, amaç ve boyut.
 
 @(table-of-contents)
 
