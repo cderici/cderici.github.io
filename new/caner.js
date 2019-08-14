@@ -18,7 +18,7 @@ jQuery(document).ready(function() {
 	    jQuery('.back-to-top').fadeOut(duration);
 	}
     });
-      
+
     jQuery('.back-to-top').click(function(event) {
 	event.preventDefault();
 	jQuery('html, body').animate({scrollTop: 0}, duration);
