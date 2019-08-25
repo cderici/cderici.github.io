@@ -170,7 +170,7 @@
 		  href="https://rpython.readthedocs.io/en/latest/">RPython
 		  framework</a>, designed to demonstrate that
 		  <a href="https://github.com/pycket/pycket/tree/master/papers"
-		     target="_blank">efficient gradual typing is
+		     target="_blank">efficient sound gradual typing is
 		     possible</a>. In the new direction of research, I
 		     first helped to make the Racket more portable
 		     (see Publications), and helped it
@@ -320,8 +320,13 @@
 		  <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016 - <span class="w3-tag w3-deep-orange w3-round">Current</span></h6>
 		</div>
 	      </div>
-	      <div id="panel-pycket" class="w3-hide w3-animate-opacity"> <!-- w3-animate-zoom|opacity|top|bottom|left|right -->
-		pycket
+	      <div id="panel-pycket" class="w3-hide
+		w3-animate-opacity"> <!-- w3-animate-zoom|opacity|top|bottom|left|right
+				       -->
+		<p>A meta-tracing JIT initally designed to reduce the
+		overhead of sound gradual typing, nowadays a runtime
+		  for self-hosting full Racket. For details, see my <a href="#" onclick="myFunction('edu-panel-1')">PhD description</a>.</p>
+		<p><a href="https://github.com/pycket/pycket" target="_blank">[https://github.com/pycket/pycket]</a></p>
 	      </div>
 	    </div>
 
@@ -336,7 +341,46 @@
 		</div>
 	      </div>
 	      <div id="panel-rax" class="w3-hide w3-animate-opacity"> <!-- w3-animate-zoom|opacity|top|bottom|left|right -->
-		rax
+		<p>
+		  A full-stack nanopass compiler from a small subset
+		  of Racket all the way down to x86_64 assembly.
+		  Started for fun, collaborated with
+		  a <a target="_blank"
+		  href="https://github.com/RyanGlScott">friend</a> to
+		  turn it into a school project, then it turned into
+		  an open source project. Built and tested all the
+		  passes (e.g.  closure conversion, register
+		  allocation, code-gen, etc.).
+		</p>
+		<p><a target="_blank" href="https://github.com/cderici/rax">[https://github.com/cderici/rax]</a></p>
+	      </div>
+	    </div>
+
+	    <!-- Denotational Semantics Stuff -->
+	    <div class="w3-container">
+	      <div class="w3-container w3-btn w3-round-large w3-block w3-left-align" onclick="myFunction('panel-denot')" >
+		<div class="w3-twothird">
+		  <h6 class="w3-opacity"><b>Correcness Proof of a Closure Conversion Pass</b></h6>
+		</div>
+		<div class="w3-third" align="right">
+		  <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018</h6>
+		</div>
+	      </div>
+	      <div id="panel-denot" class="w3-hide w3-animate-opacity"> <!-- w3-animate-zoom|opacity|top|bottom|left|right -->
+		<p>
+		  I collaborated with <a target="_blank"
+		  href="https://wphomes.soic.indiana.edu/jsiek/">Jeremy
+		  Siek</a> and <a target="_blank"
+		  href="https://github.com/madheime">Matthew
+		  Heimerdinger</a> to help prove the corectness of a
+		  closure conversion pass of a compiler for a
+		  functional language represented as denotational
+		  semantics in Isabelle.
+		</p>
+		<p><a target="_blank"
+		href="https://github.com/madheime/denotsem-compiler">[https://github.com/madheime/denotsem-compiler]</a>
+		(might be a private repo)</p>
+		</p>
 	      </div>
 	    </div>
 
@@ -351,22 +395,16 @@
 		</div>
 	      </div>
 	      <div id="panel-hazircevap" class="w3-hide w3-animate-opacity"> <!-- w3-animate-zoom|opacity|top|bottom|left|right -->
-		HazırCevap
-	      </div>
-	    </div>
-
-	    <!-- FARS -->
-	    <div class="w3-container">
-	      <div class="w3-container w3-btn w3-round-large w3-block w3-left-align" onclick="myFunction('panel-fars')" >
-		<div class="w3-twothird">
-		  <h6 class="w3-opacity"><b>FARS: Functional Automated Reasoning System</b></h6>
-		</div>
-		<div class="w3-third" align="right">
-		  <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012</h6>
-		</div>
-	      </div>
-	      <div id="panel-fars" class="w3-hide w3-animate-opacity"> <!-- w3-animate-zoom|opacity|top|bottom|left|right -->
-		FARS
+		<p>A closed domain question answering system for high
+		  school students.  Funded by <a target="_blank"
+		  href="https://www.tubitak.gov.tr/en">TUBITAK</a>
+		  (The Scientific and Technological Research Council
+		  of Turkey). I lead the research and development, 3
+		  faculty members (both from CS and also School of
+		  Education) and 4 grad students were involved. This
+		  was my MSc thesis work, so I worked on pretty much
+		  everything about it. (see Publications)
+		</p>
 	      </div>
 	    </div>
 
@@ -381,22 +419,66 @@
 		</div>
 	      </div>
 	      <div id="panel-sessiz" class="w3-hide w3-animate-opacity"> <!-- w3-animate-zoom|opacity|top|bottom|left|right -->
-		read to silence
+		<p> Did you know that it's tremendously hard for deaf
+		  people to read? Well I didn't. This is a joint work
+		  with the Department of Western Languages &
+		  Literatures to build a web-based application to
+		  teach people with hearing disability how to
+		  read. Two faculties trom Linguistics, one from CS,
+		  and two RAs were involved. Project aims to develop a
+		  stable framework on which the Turkish grammar
+		  lectures and exercises for deaf people can easily be
+		  provided. I collaborated with the linguists to
+		  implement the application (available on both PC and
+		  mobile) that’s designed specifically for deaf
+		  people.
+		</p>
 	      </div>
 	    </div>
 
-	    <!-- Denotational Semantics Stuff -->
+	    <!-- Direnaj -->
 	    <div class="w3-container">
-	      <div class="w3-container w3-btn w3-round-large w3-block w3-left-align" onclick="myFunction('panel-denot')" >
+	      <div class="w3-container w3-btn w3-round-large w3-block w3-left-align" onclick="myFunction('panel-direnaj')" >
 		<div class="w3-twothird">
-		  <h6 class="w3-opacity"><b>Denotational Semantics</b></h6>
+		  <h6 class="w3-opacity"><b>Direnaj: Social Network Data Procesing Framework</b></h6>
 		</div>
 		<div class="w3-third" align="right">
-		  <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018</h6>
+		  <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2014</h6>
 		</div>
 	      </div>
-	      <div id="panel-denot" class="w3-hide w3-animate-opacity"> <!-- w3-animate-zoom|opacity|top|bottom|left|right -->
-		A corectness proof of a denotational semantics of a closure conversion pass with Isabelle.
+	      <div id="panel-direnaj" class="w3-hide w3-animate-opacity"> <!-- w3-animate-zoom|opacity|top|bottom|left|right -->
+		<p>Data Collection, Processing and Visualization
+		Framework for real-time social network data, lead
+		by <a target="_blank"
+		href="https://www.cmpe.boun.edu.tr/~uskudarli/">Suzan
+		Üsküdarlı</a>. 4 faculty members and 7 grad students
+		were involved. I developed parts of the processing
+		library with JavaEE, implementing certain tools used
+		for various kinds of analyses, such as centrality
+		analysis, stopword collection, etc.
+		</p>
+		<p><a target="_blank" href="http://direnaj-staging.cmpe.boun.edu.tr/">[http://direnaj-staging.cmpe.boun.edu.tr/]</a> (might be private because of the Twitter privacy terms)</p>
+	      </div>
+	    </div>
+
+	    <!-- FARS -->
+	    <div class="w3-container">
+	      <div class="w3-container w3-btn w3-round-large w3-block w3-left-align" onclick="myFunction('panel-fars')" >
+		<div class="w3-twothird">
+		  <h6 class="w3-opacity"><b>FARS: Functional Automated Reasoning System</b></h6>
+		</div>
+		<div class="w3-third" align="right">
+		  <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012</h6>
+		</div>
+	      </div>
+	      <div id="panel-fars" class="w3-hide w3-animate-opacity"> <!-- w3-animate-zoom|opacity|top|bottom|left|right -->
+		<p>
+		  This is a resolution-refutation style automated
+		  theorem prover. I developed it for fun at first,
+		  then I turned it into a project for school. Written
+		  all in Racket by myself.
+		</p>
+		<p><a target="_blank" href="https://github.com/cderici/FARS">[https://github.com/cderici/FARS]</a></p>
 	      </div>
 	    </div>
 
@@ -411,24 +493,25 @@
 		</div>
 	      </div>
 	      <div id="panel-moby" class="w3-hide w3-animate-opacity"> <!-- w3-animate-zoom|opacity|top|bottom|left|right -->
-		undergraduate thesis
+		<p>This was my undergradute thesis (see <a href="#"
+		onclick="myFunction('edu-panel-4')">BSc
+		description</a>). It was a project from Brown
+		University under supervision of <a target="_blank"
+		href="https://cs.brown.edu/~sk/">Shriram
+		Krishnamurthi</a>, a compiler from Racket Advanced
+		Student Language to JS and HTML. I participated in the
+		development of both compiler and runtime libraries. My
+		major contribution was to add the tail-calls. Nowadays
+		it's used on <a target="_blank"
+		href="https://www.wescheme.org/">WeScheme</a> by
+		  <a target="_blank"
+		  href="https://www.bootstrapworld.org/">the Bootstrap
+		  curriculum</a>.
+		</p>
+		<p><a target="_blank" href="https://github.com/cderici/moby-scheme">[https://github.com/cderici/moby-scheme]</a></p>
 	      </div>
 	    </div>
 
-	    <!-- Direnaj -->
-	    <div class="w3-container">
-	      <div class="w3-container w3-btn w3-round-large w3-block w3-left-align" onclick="myFunction('panel-direnaj')" >
-		<div class="w3-twothird">
-		  <h6 class="w3-opacity"><b>Direnaj</b></h6>
-		</div>
-		<div class="w3-third" align="right">
-		  <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2014</h6>
-		</div>
-	      </div>
-	      <div id="panel-direnaj" class="w3-hide w3-animate-opacity"> <!-- w3-animate-zoom|opacity|top|bottom|left|right -->
-		direnaj
-	      </div>
-	    </div>
 	    <hr>
 	  </div> <!-- End Projects -->
 
