@@ -121,68 +121,121 @@
 	  <div class="w3-container w3-card w3-white  w3-margin-bottom w3-animate-opacity">
 	    <!-- <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-linux fa-fw w3-margin-right w3-xxlarge w3-text-deep-orange"></i>Introduction</h2> -->
 	    <div class="w3-container w3-margin-left w3-margin-top w3-margin-bottom">
-	      <p>Welcome to the extended version of my resume
-		(<a href="docs/CanerDerici-resume.pdf"
-		target="_blank">pdf</a> | <a target="_blank"
-		href="https://www.overleaf.com/read/jbsbnxbnjfdd">tex</a>). This
-		page contains the details/explanations of what you see
-		in my resume, as well as a couple of additional
-		projects I did and assessments of who I am
-		professionally. Click on a title to see the details
-		for it. You're more than welcome
+	      <p>Welcome to the extended version of my resume.
+		<!-- (<a href="docs/CanerDerici-resume.pdf" -->
+		<!-- target="_blank">pdf</a> | <a target="_blank" -->
+		<!-- href="https://www.overleaf.com/read/jbsbnxbnjfdd">tex</a>). -->
+		This page contains the details/explanations of what
+		you see in my resume, as well as a couple of
+		additional projects I did and assessments of who I am
+		professionally. Click on a title to see the
+		details. You're more than welcome
 		to <a href="mailto:cderici@iu.edu"
 		target="_blank">send me an email</a> if you'd like to
 		get more information. </p>
+
+	      <!-- View Resume PDF -->
+              <div class="w3-container">
+
+		<div class="w3-container w3-btn w3-round-large w3-block w3-left-align" onclick="myFunction('cv-panel-1')" >
+		  <div class="w3-twothird">
+		    <h6 class="w3-opacity"><b>View Resume PDF</b></h6>
+		  </div>
+		  <!-- <div class="w3-third" align="right"> -->
+		  <!--   <h6 class="w3-text-deep-orange"><i class="fa fa-download fa-fw w3-margin-right"></i><span class="w3-tag w3-deep-orange w3-round">Download</span></h6> -->
+		  <!-- </div> -->
+		</div>
+		<div id="cv-panel-1" class="w3-hide w3-animate-opacity"> <!-- w3-animate-zoom|opacity|top|bottom|left|right -->
+		  <iframe src="docs/CanerDerici-resume.pdf" width="100%" height="400px"></iframe>
+
+		  <div align="right">
+		    [<a target="_blank"
+			href="https://www.overleaf.com/read/jbsbnxbnjfdd">TEX SOURCE</a>]
+		  </div>
+
+		</div>
+		<!--<hr>-->
+              </div>
+
+              <div class="w3-container">
+
+		<div class="w3-container w3-btn w3-round-large w3-block w3-left-align" onclick="myFunction('nerdy-panel-1')" >
+		  <div class="w3-twothird">
+		    <h6 class="w3-opacity"><b>Nerdy TL;DR</b></h6>
+		  </div>
+		  <!-- <div class="w3-third" align="right"> -->
+		  <!--   <h6 class="w3-text-deep-orange"><i class="fa fa-download fa-fw w3-margin-right"></i><span class="w3-tag w3-deep-orange w3-round">Download</span></h6> -->
+		  <!-- </div> -->
+		</div>
+		<div id="nerdy-panel-1" class="w3-hide w3-animate-opacity"> <!-- w3-animate-zoom|opacity|top|bottom|left|right -->
+
+		  <p>
+		    I'm a practice oriented computer scientist, and
+		    like to get involved in the details of
+		    implementation. I like working in high pace
+		    dynamic settings and make stuff happen, preferably
+		    with a good team.</p>
+
+		  <p>
+		    So far I worked with Racket and Python for many
+		    years, mostly written functional code. I also have
+		    experience in object oriented setups and
+		    imperative languages as well. I am particularly
+		    good in test-driven approaches and debugging in
+		    general.
+		  </p>
+
+		  <!-- <p>I often get asked what does it mean to -->
+		  <!-- 	study/specialize on Programming Languages. The short -->
+		  <!-- 	answer is, most implement programs to solve problems, -->
+		  <!-- 	I implement languages to do that. The slightly longer -->
+		  <!-- 	answer is, studying programming langauges provides a -->
+		  <!-- 	unique perspective on things like <b>i)</b> how -->
+		  <!-- 	programmers like to express computation to either -->
+		  <!-- 	machines or other programmers, <b>ii)</b> how programs -->
+		  <!-- 	get compiled and evaluated by real or virtual -->
+		  <!-- 	machines, <b>iii)</b> among the many possible ways of -->
+		  <!-- 	writing the same software, which one has the best -->
+		  <!-- 	performance in terms of space and time. </p> -->
+
+		  <p>I prefer collaboration and team work to competition,
+		    (good) tea to (good) coffee, kindness to power. I
+		    equally and unconditionally like all the bi-pedals and
+		    poly-pods alike.</p>
+
+		  <p>My undergraduate work was about adding tail-calls to
+		    a Racket-to-JS compiler. In my masters I studied
+		    <b>Machine Learning and Natural Language Processing</b>; my
+		    work was about developing a question answering system
+		    for high-school students. Currently (2021) my PhD work
+		    is about <b>fast run-times for dynamic languages</b>. In
+		    particular, I'm trying to show that rapid prototyping
+		    an efficient run-time for a self-hosting dynamically
+		    typed language (e.g. Racket) is achievable using an
+		    automatically generated <b>tracing JIT compiler</b>
+		    on <a target="_blank"
+			  href="https://rpython.readthedocs.io/en/latest/">RPython
+		      framework</a>. You can see the details for all of them below.</p>
+
+
+		  <!-- <p>I like all abstractions at all levels; languages, -->
+		  <!--   functions, objects, sometimes types as -->
+		  <!--   well. Depending on the language I often prefer -->
+		  <!--   tail recursion to a loop, continuations to -->
+		  <!--   exceptions, and I equally like the stack and the -->
+		  <!--   heap (though I'm not very fond of the occasional -->
+		  <!--   GC pressure and the subsequent callgrind sessions -->
+		  <!--   :). Every now and then I try to use my superpowers -->
+		  <!--   for the good of others.</p> -->
+
+		</div>
+		<!--<hr>-->
+              </div>
+
+
+
 	    </div>
 	  </div>
-
-	  <!-- TLDR -->
-	  <div class="w3-container w3-card w3-white w3-margin-bottom">
-	    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-info-circle fa-fw w3-margin-right w3-xxlarge w3-text-deep-orange"></i>Nerdy TL;DR</h2>
-	    <div class="w3-container w3-margin-left w3-margin-top w3-margin-bottom">
-	      <p>I like all abstractions at all levels; languages,
-		functions, objects, sometimes types as well. Depending
-		on the language I often prefer tail recursion to a
-		loop, continuations to exceptions, and I equally like
-		the stack and the heap (though I'm not very fond of
-		the occasional GC pressure -- who is, right?). Every
-		now and then I try to use my superpowers for the good
-		of others.</p>
-
-	      <p>I often get asked what does it mean to
-		study/specialize on Programming Languages. The short
-		answer is, you implement programs to solve problems, I
-		implement languages to do that. The slightly longer
-		answer is, studying programming langauges provides a
-		unique perspective on things like <b>i)</b> how
-		programmers like to express computation to either
-		machines or other programmers, <b>ii)</b> how programs
-		get compiled and evaluated by real or virtual
-		machines, <b>iii)</b> among the many possible ways of
-		writing the same software, which one has the best
-		performance in terms of space and time. </p>
-
-	      <p>I prefer collaboration and team work to competition,
-		(good) tea to (good) coffee, kindness to power. I
-		equally and unconditionally like all the bi-pedals and
-		poly-pods alike.</p>
-
-	      <p>My undergraduate work was about adding tail-calls to
-		a Racket-to-JS compiler. In my masters I studied
-		<b>Machine Learning and Natural Language Processing</b>; my
-		work was about developing a question answering system
-		for high-school students. Currently (2019) my PhD work
-		is about <b>fast run-times for dynamic languages</b>. In
-		particular, I'm trying to show that rapid prototyping
-		an efficient run-time for a self-hosting dynamically
-		typed language (e.g. Racket) is achievable using an
-		automatically generated <b>tracing JIT compiler</b>
-		on <a target="_blank"
-		      href="https://rpython.readthedocs.io/en/latest/">RPython
-		  framework</a>. You can see the details for all of them below.</p>
-	      </div>
-	    <hr>
-	  </div> <!-- End Scholarships -->
 
 
 	  <div class="w3-container w3-card w3-white  w3-margin-bottom w3-animate-opacity">
@@ -195,7 +248,7 @@
 		  <h6 class="w3-opacity"><b>PhD Computer Science - Indiana University, IN, USA</b></h6>
 		</div>
 		<div class="w3-third" align="right">
-		  <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - <span class="w3-tag w3-deep-orange w3-round">2020</span></h6>
+		  <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - <span class="w3-tag w3-deep-orange w3-round">2021</span></h6>
 		</div>
 	      </div>
               <div id="edu-panel-1" class="w3-hide w3-animate-opacity"> <!-- w3-animate-zoom|opacity|top|bottom|left|right -->
@@ -598,6 +651,23 @@
 	    <div class="w3-right-align"><font class="w3-text-grey w3-right-align">[click on a title to see details]</font></div>
 	    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-briefcase fa-fw w3-margin-right w3-xxlarge w3-text-deep-orange"></i>Experience</h2>
 
+	    <!-- Course Instructor -->
+	    <div class="w3-container">
+	      <div class="w3-container w3-btn w3-round-large w3-block w3-left-align" onclick="myFunction('panel-teaching-iu')" >
+		<div class="w3-twothird">
+		  <h6 class="w3-opacity"><b>Course Instructor</b>, Indiana University, IN, USA</h6>
+		</div>
+		<div class="w3-third" align="right">
+		  <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Spring 2021</h6>
+		</div>
+	      </div>
+	      <div id="panel-teaching-iu" class="w3-hide w3-animate-opacity"> <!-- w3-animate-zoom|opacity|top|bottom|left|right -->
+		<p>
+		  Taught Introduction to Computer Science (HtDP Style Functional Programming) with Racket.
+		</p>
+	      </div>
+	    </div>
+
 	    <!-- TA IU -->
 	    <div class="w3-container">
 	      <div class="w3-container w3-btn w3-round-large w3-block w3-left-align" onclick="myFunction('panel-teaching-iu')" >
@@ -605,18 +675,18 @@
 		  <h6 class="w3-opacity"><b>TA & RA</b>, Indiana University, IN, USA</h6>
 		</div>
 		<div class="w3-third" align="right">
-		  <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2019</h6>
+		  <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2020</h6>
 		</div>
 	      </div>
 	      <div id="panel-teaching-iu" class="w3-hide w3-animate-opacity"> <!-- w3-animate-zoom|opacity|top|bottom|left|right -->
 		<p>
-		  Taught the introduction to programming (in Racket)
-		  for 3 semester, and the domain specific language
-		  design and implementation
+		  Taught Advanced Compilers, Introduction to
+		  Programming (in Racket), and the domain specific
+		  language design and implementation
 		  with <a href="http://homes.sice.indiana.edu/samth/"
 		  target="_blank">Sam Tobin-Hochstadt</a> for 1
-		  semester. I was a research assistant for Sam for 4
-		  semesters and 3 summers.
+		  semester. I was a research assistant for Sam for 5
+		  semesters and 4 summers.
 		</p>
 	      </div>
 	    </div>
