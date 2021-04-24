@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <title>Caner Derici, Content Creation</title>
+  <title>Caner Derici, Building a Community</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -20,6 +20,27 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-146433729-1');
+
+const ytK = 'AIzaSyBhwBUD2fmybnQgx0Q7IUkPTWXmJH1jRKk';
+const ytI = 'UCQUqjj5SfL9vfJxJ53ygN7w';
+
+fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${ytI}&key=${ytK}`)
+    .then(response => {
+	  //console.log("response json");
+  	  return response.json()
+    })
+    .then(data => {
+        console.log(data);
+        var sbCountDivText = document.getElementById('ytLi').innerHTML;
+        //console.log(sbCountDivText);
+        const subNum = data["items"][0].statistics.subscriberCount;
+        const vidCount = data["items"][0].statistics.videoCount;
+        const viewCount = data["items"][0].statistics.viewCount;
+        var strNew = sbCountDivText.replace(' many ', ' ' + subNum + ' ');
+        //console.log(strNew);
+        document.getElementById('ytLi').innerHTML = strNew + ', ' + vidCount + ' videos with ' + viewCount + ' total views!';
+    })
+
   </script>
 
   <body class="w3-light-gray">
@@ -71,7 +92,7 @@
 	  <div class="w3-bar">
 	    <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
 	    <a href="cv.html" class="w3-bar-item w3-button w3-mobile">Professional</a>
-	    <a href="content.html" class="w3-bar-item w3-button w3-mobile w3-hover-deep-orange w3-deep-orange">Content Creation</a>
+	    <a href="content.html" class="w3-bar-item w3-button w3-mobile w3-hover-deep-orange w3-deep-orange">Building a Community</a>
 	    <a href="music.html" class="w3-bar-item w3-button w3-mobile">Music</a>
 	    <a href="artsy.html" class="w3-bar-item w3-button w3-mobile">Artsy</a>
 	    <a href="travel.html" class="w3-bar-item w3-button w3-mobile">Travel</a>
@@ -82,17 +103,21 @@
 	  <div class="w3-container w3-card w3-white  w3-margin-bottom w3-animate-opacity">
 	    <!-- <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-linux fa-fw w3-margin-right w3-xxlarge w3-text-deep-orange"></i>Introduction</h2> -->
 	    <div class="w3-container w3-margin-left w3-margin-top w3-margin-bottom">
-	      <p>Recently I started creating content as a hobby. I
-	      stream on <a href="http://twitch.tv/lambda_cd"
-	      target="_blank">Twitch</a> and also make the content
-	      available on
-	      my <a href="https://www.youtube.com/channel/UCQUqjj5SfL9vfJxJ53ygN7w"
-	      target="_blank">YouTube</a> channel. The types of
-	      content I make include <b>teaching programming to
-	      beginners</b>, <b>StarCraft II</b> gameplay/cast,
-	      and <b>live game development</b> for fun. Below you can
-	      find some of the highlights and directions to my content
-	      (mostly in Turkish).</p>
+	      <p>In 2020 I started creating content on Twitch as a hobby, and I successfully built a growing community around: (as of 2021)<p>
+		<ul class="w3-ul">
+		  <li>  <a href="http://twitch.tv/lambda_cd" target="_blank">Twitch affiliate channel</a> with >500 followers & >20 subs</li>
+		  <li> <a href="http://discord.gg/eZVpkjhb">Discord</a> server with >200 people</li>
+		  <li id="ytLi"> <a href="https://www.youtube.com/channel/UCQUqjj5SfL9vfJxJ53ygN7w" target="_blank">YouTube</a> channel with many subs</li>
+		  <script type="text/javascript">
+		  </script>
+		</ul>
+	      </p>
+	      <p>Maybe not the greatest numbers out there, but I'm proud nontheless :) </p>
+	      <p>The types of content I make include <b>teaching programming to
+		  beginners</b>, <b>StarCraft II</b> gameplay/analysis/improvement,
+		and <b>live game development</b> for fun. Below you can
+		find some of the highlights and directions to my content
+		(mostly in Turkish).</p>
 	    </div>
 	  </div>
 	  <!-- Twitch <i class="fa fa-twitch fa-fw w3-margin-right w3-xxlarge w3-text-deep-orange"></i> -->
