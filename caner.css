@@ -1,6 +1,12 @@
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto Condensed", sans-serif}
   a {text-decoration: none; border-bottom: 1px solid #eb4034;}
 
+.lnk {
+    target: "_blank";
+    border-bottom: 0px;
+    color: #ff5722;
+}
+
 .back-to-top {
     position: fixed;
     bottom: 10px;
