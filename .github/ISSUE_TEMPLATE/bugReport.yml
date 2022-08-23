@@ -1,0 +1,54 @@
+name: NAME_OF_TEMPLATE
+description: DESCRIPTION
+title: This is not working well
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Yo yo yo
+  - type: input
+    id: Name
+    attributes:
+      label: Name of Issue
+      description: What is the name of this issue?
+      placeholder: ex. Issue form input bug
+    validations:
+      required: true
+    
+  - type: textarea
+    id: info
+    attributes:
+      label: More info
+      description: asdasdasd
+      render: shell
+    validations:
+      required: true
+      
+    - type: dropdown
+      id: level
+      attributes:
+        label: how urgent this is for you?
+        description: lalalau
+        options:
+          - Casual
+          - Annoying
+          - Blocker
+          - Client Presentation Getting Fucked
+      validations:
+        required: true
+        
+    - type: checkboxes
+      id: location
+      attributes:
+        label: qweqweqweqwe
+        description: description checkboxes
+        options:
+          - label: option A
+            required: false
+          - label: option B
+            required: false
+          - label: option C
+          - label: option D
+            required: false
+     
