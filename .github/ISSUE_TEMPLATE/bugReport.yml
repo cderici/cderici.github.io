@@ -11,9 +11,8 @@ body:
     id: Description
     attributes:
       label: Description
-      description: "Please describe the bug for us :"
-    validations:
-      required: true
+      description: "Please describe the bug for us: "
+      placeholder: ex. "Client facade used to work for everything you need! Now I'm getting this error:"
 
   - type: dropdown
     id: Urgency
@@ -24,7 +23,7 @@ body:
         - Casually reporting
         - Annoying bug in our test suite
         - Blocker for our release
-        - I need this for presentation, help!
+        - Client presentation, help now please!
     validations:
       required: true
 
