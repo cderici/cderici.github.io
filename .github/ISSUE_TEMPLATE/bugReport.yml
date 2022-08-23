@@ -23,7 +23,7 @@ body:
     attributes:
       label: More information
       description: Add more information on the tip you would like to see.
-      render: shell
+      render: python
     validations:
       required: true
 
