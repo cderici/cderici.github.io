@@ -1,55 +1,56 @@
-name: Tip Request
-description: Request a GitHub Tip from MishManners
-title: "[Tip]: I want "
-labels: [Tip, enhancement]
-assignees:
-  - mishmanners
+name: Bug Report
+description: Report that something in python-libjuju is not working right.
+title: "[Bug]: "
+labels: [bug]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for asking Mish for a Tip. Tune into a Live stream or read Mish's articles on DEV for great GitHub tips.
-  - type: input
-    id: Name
+        Thanks for pointing out this issue. Please provide info below so we could diagnose and fix it fast.
+  - type: textarea
+    id: Description
     attributes:
-      label: Name of GitHub Tip
-      description: What is the name of this GitHub Tip?
-      placeholder: ex. GitHub Issue Forms
+      label: Description
+      description: "Please describe the bug for us :"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: Urgency
+    attributes:
+      label: Urgency
+      description: How urgent is this issue for you?
+      options:
+        - Casually reporting
+        - Annoying bug in our test suite
+        - Blocker for our release
+        - I need this for presentation, help!
+    validations:
+      required: true
+
+  - type: input
+    id: Libjuju-Version
+    attributes:
+      label: Python-libjuju version
+      description: What version of python-libjuju exhibits this issue?
+      placeholder: ex. edge, 2.9.10, 3.0.0
+    validations:
+      required: true
+
+  - type: input
+    id: Juju-Version
+    attributes:
+      label: Juju version
+      description: What version of Juju are we running against?
+      placeholder: ex. edge, 2.9.33, 3.0-beta3, 3.0-rc1-798b0ef
     validations:
       required: true
 
   - type: textarea
     id: info
     attributes:
-      label: More information
-      description: Add more information on the tip you would like to see.
+      label: "Reproduce / Test"
+      description: "Please add a valid Python code to reproduce the bug. This will be used as a test for QAing later on."
       render: python
     validations:
       required: true
-
-  - type: dropdown
-    id: Level
-    attributes:
-      label: What kind of level is this tip?
-      description: What level of developer do you tthink this tip is aimed at?
-      options:
-        - Beginner
-        - Intermediate
-        - Advanced
-    validations:
-      required: true
-
-  - type: checkboxes
-    id: location
-    attributes:
-      label: Where do you want this GitHub Tip?
-      description: Where would you like to see this GitHub Tip? You can select more than one.
-      options:
-        - label: Twitch
-          required: false
-        - label: DEV post
-          required: false
-        - label: YouTube video (longer)
-          required: false
-        - label: Twitter video (shorter)
-          required: false
