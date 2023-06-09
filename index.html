@@ -7,8 +7,12 @@
   <link rel="stylesheet" href="caner.css">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+  <link rel="stylesheet" href="css/lightbox.css">
 
   <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
   <script type="text/javascript" src="caner.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -21,8 +25,10 @@
     gtag('config', 'UA-146433729-1');
   </script>
 
-  <body class="w3-dark-gray">
-
+  <body class="w3-flat-wet-asphalt">
+  <!--
+  <body class="w3-blue-grey">
+-->
     <!-- Page Container -->
     <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
@@ -44,7 +50,7 @@
 	      <p><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-large w3-text-deep-orange"></i>PhD Candidate, Computer Science</p>
               <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-deep-orange"></i>Sandy, UT, USA</p>
 	      <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-deep-orange"></i><a href="https://github.com/cderici" style="border-bottom: 0px" target="_blank">cderici</a></p>
-              <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-deep-orange"></i><a href="mailto:caner.derici@canonical.com" style="border-bottom: 0px" target="_blank">caner.derici@canonical.com</a></p>
+              <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-deep-orange"></i><a href="mailto:canerderici@gmail.com" style="border-bottom: 0px" target="_blank">canerderici@gmail.com</a></p>
 	      <div class="w3-container w3-center">
 		<p><a href="http://twitch.tv/lambda_cd"  target="_blank" style="border-bottom: 0px"><i class="fa fa-twitch w3-margin-right w3-hover-opacity w3-large w3-text-deep-orange"></i></a>
 		  <a href="https://www.youtube.com/channel/UCQUqjj5SfL9vfJxJ53ygN7w"  target="_blank" style="border-bottom: 0px"><i class="fa fa-youtube w3-margin-right w3-hover-opacity w3-large w3-text-deep-orange"></i></a>
@@ -69,7 +75,9 @@
 	  <div class="w3-bar">
 	    <a href="index.html" class="w3-bar-item w3-button w3-mobile w3-hover-deep-orange w3-deep-orange">Home</a>
 	    <a href="cv.html" class="w3-bar-item w3-button w3-mobile">Professional</a>
+		<a href="homelab.html" class="w3-bar-item w3-button w3-mobile">HomeLab</a>
 	    <a href="content.html" class="w3-bar-item w3-button w3-mobile">Building a Community</a>
+		  <a href="bike.html" class="w3-bar-item w3-button w3-mobile">Bike</a>
 	    <a href="music.html" class="w3-bar-item w3-button w3-mobile">Music</a>
 	    <a href="artsy.html" class="w3-bar-item w3-button w3-mobile">Artsy</a>
 	    <a href="travel.html" class="w3-bar-item w3-button w3-mobile">Travel</a>
@@ -94,8 +102,12 @@
 
 	      <p>
 			  At Canonical I'm currently in the <a
-			  href="https://github.com/juju" class="lnk">Juju</a> Team, just
-			  started to learn and play with cloud technologies.
+			  href="https://github.com/juju" class="lnk">Juju</a> Team, working on orchestration in general, developing
+			  and maintaining client libraries (e.g. <a
+				  href="https://github.com/juju/python-libjuju" class="lnk">python-libjuju</a>), back-end optimization,
+			  exploring new ways of using Juju (active development on the
+			  <a href="https://github.com/juju/terraform-provider-juju" class="lnk">terraform juju provider</a>).
+			  Doing a bunch of hiring, and hacking a bunch of Go and Python.
 		  </p>
 
 	      <p>My PhD is in Computer Science
@@ -103,8 +115,9 @@
 	      class="lnk">Indiana University</a>, specializing in
 	      Programming Languages (PL), minoring in Logic at
 	      the <a href="http://www.philosophy.indiana.edu/areas/ll.shtml" class="lnk">Department
-	      of Philosophy</a>. I'm planning on finishing in late
-	      2021 (maybe a little later). My advisor
+	      of Philosophy</a>. Technically I'm in what's called the ABD stage (all-but-dissertation), however, it's on
+			  a bit of a hiatus since none of what I currently do requires a finished PhD. However, I haven't dropped
+			  out, I'm actually planning on completing it whenever possible. My advisor
 	      is <a href="http://samth.github.io/" class="lnk">Sam
 	      Tobin-Hochstadt</a>.</p>
 
@@ -112,15 +125,20 @@
 		  <ul>
 			  <li>
 				  <a href="cv.html" class="lnk">Professional</a> page, if you like to learn
-				  more about my specialties and professional life.
+				  more about my professional skills, specialties and my professional life in general.
 			</li>
+			  <li>
+				  <a href="homelab.html" class="lnk">HomeLab</a> page, if you want to check out
+				  the cool stuff I'm doing with the computing lab I built at home.
+			  </li>
+
 			  <li>
 				  <a href="content.html" class="lnk">Building a Community</a> page, if
 				  you're curious about the content I create and the community I
 				  maintain as a hobby on <a href="http://twitch.tv/lambda_cd"
-				  class="lnk">Twitch</a> and a <a
+				  class="lnk">Twitch</a> and <a
 				  href="https://www.youtube.com/channel/UCQUqjj5SfL9vfJxJ53ygN7w"
-				  class="lnk">YouTube</a> channels.
+				  class="lnk">YouTube</a>.
 			  </li>
 			  <li>
 					<a href="music.html" class="lnk">Music</a>, <a
@@ -130,13 +148,11 @@
 			  </li>
 		</ul>
 
-	      <p>Finally, the most common question people ask me in
-		the US is "How do you say your name?". I understand
-		why it's a bit tricky for English speakers, so you may
-		pronounce it however it is easiest for you, don't
-		worry about it too much, I really don't mind. However,
-		if you want to hear the way I say it, here's a sound
-		sample:
+	      <p>
+			  Finally, the most common question people ask me in the US is "How do you say your name?". I'm from
+			  Turkey, and I understand "Caner" it's a bit tricky to pronounce for English-speaking folks. No worries,
+			  you may pronounce it however it is easiest for you, I really don't mind.
+			  However, if you want to hear the way I pronounce my full name, here's a sound sample:
 	      </p>
 	      <audio controls>
 		<source src="docs/audio/name-pronunciation.opus" type='audio/ogg; codecs="opus"'>
@@ -148,11 +164,11 @@
 	    </div>
 	  </div>
 
+		<!--
 	  <div class="w3-container w3-card w3-white  w3-margin-bottom w3-animate-opacity">
 	    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-newspaper-o fa-fw w3-margin-right w3-xxlarge w3-text-deep-orange"></i>(Fairly) Recent News</h2>
 	    <h3 class="w3-text-grey w3-padding-16 w3-right-align w3-margin-right">Oct 2018</h3>
 
-	    <!-- <h4 align="right" id="recent"></h4> -->
 	    <div class="w3-container">
 	      <p>I recently passed my qualifying exam and became a PhD
 		candidate. Technically the paperwork is still going,
@@ -165,7 +181,7 @@
 	    </div>
 	    <hr>
 	    <h3 class="w3-text-grey w3-padding-16 w3-right-align w3-margin-right">May 2015</h3>
-	    <!-- <h4 align="right" id="recent"></h4> -->
+
 	    <div class="w3-container">
 
 	      <p>There has been exciting developments this year (2015) that'll completely change my professional (and personal) life. While I was doing PhD and working on HazirCevap project at Bogazici (on NLP), I applied to Indiana University, Bloomington, for a PhD position in Computer Science to work on my everlasting dream of Programming Languages, and I got accepted with full financial support! (while the funding is normal for US colleges, it's a big deal around here in Europe/Turkey)</p>
@@ -180,7 +196,7 @@
 	    </div>
 	    <hr>
 	  </div>
-
+-->
 
 
 	  <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
