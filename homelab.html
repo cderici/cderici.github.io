@@ -46,7 +46,7 @@
 	<!-- Left Column -->
 	<div class="w3-quarter">
 
-	  <div class="w3-white w3-text-grey w3-card-4">
+		<div class="w3-white w3-text-grey w3-card-4">
             <div class="w3-display-container">
 				<a href="img/content/homelab.jpg" data-lightbox="homelab">
 					<img src="img/content/homelab.jpg" style="width:100%" alt="Avatar"></a>
@@ -96,7 +96,17 @@
 	    <a href="masters.html" class="w3-bar-item w3-button w3-mobile w3-right">Masters Tribute Page</a>
 
 	  </div>
-	  <div class="w3-container w3-card w3-white  w3-margin-bottom w3-animate-opacity">
+
+		<div class="w3-container w3-card w3-white  w3-margin-bottom w3-animate-opacity">
+			<h2 class="w3-text-grey w3-padding-16"><i
+					class="fa fa-bolt fa-fw w3-margin-right w3-xxlarge w3-text-deep-orange"></i>
+				Real-time Status </h2>
+			<iframe src="https://status.canerlab.live/status/lab" width="100%" height="400""></iframe>
+			<br><br>
+		</div>
+
+
+		<div class="w3-container w3-card w3-white  w3-margin-bottom w3-animate-opacity">
 	    <h2 class="w3-text-grey w3-padding-16"><i
 				class="fa fa-flask fa-fw w3-margin-right w3-xxlarge w3-text-deep-orange"></i>HomeLab</h2>
 		  <p>I started my homelab at the beginning of 2023, and it's been growing and evolving ever since. At first the
@@ -108,11 +118,12 @@
 				  href="https://kit.co/canerderici/homelab" class="lnk">my kit page for my homelab</a>. </p>
 
 		  <div style="display: flex; padding: 10px;">
-			  <a href="img/content/proxmox3.png" data-lightbox="proxmox"
-				 data-title="Proxmox Setup" class="lnk"><img src="img/content/proxmox3.png"
-														   style="margin-right: 20px;"/></a>
+			  <a href="img/content/proxmox4.png" data-lightbox="proxmox"
+				 data-title="Proxmox Setup" class="lnk">
+				  <img src="img/content/proxmox4.png" style="margin-right: 20px;width: 200px;height: auto"/></a>
 			  <p style="margin-top: -5px;">I'm using <a href="https://www.proxmox.com/en/" class="lnk">Proxmox</a> as
-				  my hypervisor on a Dell server with H710 mini raid controller for NAS. I'm running a bunch of VMs
+				  my hypervisor on a Dell R720 server with an H710 mini raid controller for NAS. I'm running a bunch of
+				  VMs
 				  for different purposes: <br> My <a href="https://www.truenas.com/" class="lnk">TrueNAS</a> is
 				  running on
 				  <i>titanium</i> (I like naming VMs as chemical elements) with a <a href="https://nextcloud.com/"
@@ -123,7 +134,7 @@
 				  on <i>potassium</i> to cache our dns requests to make things more responsive at home, as well as
 				  blocking ads globally across the network.<br>Firewall is handled by an <a
 						  href="https://opnsense.org/" class="lnk">OPNSense</a>
-				  instance for now, I'm planning on switching to a hardware setup soon.<br><i>Oxygen</i> and
+				  instance for now, I'm planning on switching to a hardware setup soon.<br><i>Silicon</i> and
 				  <i>nitrogen</i> are serving as our local and live proxies, running <a
 						  href="https://traefik.io/traefik/" class="lnk">Traefik</a> containers, both utilizing <a
 						  href="https://www.portainer.io/" class="lnk">Portainer</a> instances to manage docker
@@ -131,7 +142,11 @@
 						  href="https://github.com/sethcottle/littlelink" class="lnk">LittleLink</a> instance to
 				  serve <a href="https://canerlab.live" class="lnk">canerlab.live</a>, and things like <a
 						  href="https://github.com/louislam/uptime-kuma" class="lnk">Uptime Kuma</a> for
-				  monitoring.<br>In addition to all this, <i>lithium</i> is running a headless ubuntu that I use
+				  monitoring, which is what serves that live status page you see at the top of this page. <br>In
+				  addition to
+				  all this, <i>
+					  lithium</i> is running a headless
+				  ubuntu that I use
 				  daily for work. I use Jetbrains Gateway to keep my Goland instances remotely hooked up there all the
 				  time.
 			  </p>
