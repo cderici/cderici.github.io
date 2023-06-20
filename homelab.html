@@ -101,7 +101,7 @@
 			<h2 class="w3-text-grey w3-padding-16"><i
 					class="fa fa-bolt fa-fw w3-margin-right w3-xxlarge w3-text-deep-orange"></i>
 				Real-time Status </h2>
-			<iframe src="https://status.canerlab.live/status/lab" width="100%" height="400""></iframe>
+			<iframe src="https://status.canerlab.live/status/lab" width="100%" height="400"></iframe>
 			<br><br>
 		</div>
 
@@ -134,35 +134,35 @@
 				  on <i>potassium</i> to cache our dns requests to make things more responsive at home, as well as
 				  blocking ads globally across the network.<br>Firewall is handled by an <a
 						  href="https://opnsense.org/" class="lnk">OPNSense</a>
-				  instance for now, I'm planning on switching to a hardware setup soon.<br><i>Silicon</i> and
-				  <i>nitrogen</i> are serving as our local and live proxies, running <a
-						  href="https://traefik.io/traefik/" class="lnk">Traefik</a> containers, both utilizing <a
+				  instance for now, I'm planning on switching to a hardware setup soon.
+
+				  <br><i>Silicon</i> and <i>nitrogen</i> are serving as our reverse proxies, each running a <a
+						  href="https://traefik.io/traefik/" class="lnk">Traefik</a> instance. <i>Nitrogen</i> is
+				  the live reverse proxy, handling requests coming from the internet, and the <i>Silicon</i> is the
+				  local reverse proxy, handling internal routing of the services. Both are utilizing <a
 						  href="https://www.portainer.io/" class="lnk">Portainer</a> instances to manage docker
-				  images. They also host a bunch of small services such as a <a
+				  images, hosting a bunch of small services such as a <a
 						  href="https://github.com/sethcottle/littlelink" class="lnk">LittleLink</a> instance to
 				  serve <a href="https://canerlab.live" class="lnk">canerlab.live</a>, and things like <a
 						  href="https://github.com/louislam/uptime-kuma" class="lnk">Uptime Kuma</a> for
 				  monitoring, which is what serves that live status page you see at the top of this page. <br>In
-				  addition to
-				  all this, <i>
-					  lithium</i> is running a headless
-				  ubuntu that I use
-				  daily for work. I use Jetbrains Gateway to keep my Goland instances remotely hooked up there all the
-				  time.
+				  addition to all this, <i>lithium</i> is running a headless ubuntu that I use daily for work. I use
+				  Jetbrains Gateway to keep my Goland instances remotely hooked up there all the time.
 			  </p>
 		  </div>
 		  <p style="margin-top: -5px;">My external DNS is handled by <a href="https://www.cloudflare.com/" class="lnk">
-			  Cloudflare</a>
-			  and
-			  SSL
-			  certificates are from <a href="https://letsencrypt.org/" class="lnk">LetsEncrypt</a>. Here's the
-			  logical layout of the services:</p>
+			  Cloudflare</a> and the SSL certificates are provided by <a
+				  href="https://letsencrypt.org/" class="lnk">LetsEncrypt</a>, distributed internally by the Traefik
+			  instances on <i>nitrogen</i> and <i>silicon</i>, so all the services under the domain
+			  "canerlab.live"
+			  are legit SSL certified.
+			  <br><br> Here's the logical layout of the services:</p>
 	      <center>
 		<a href="img/homelab_sketch.png" data-lightbox="homelab"
 		data-title="Homelab Services"><img src="img/homelab_sketch.png" width=804
 		height=248 /></a>
 	      </center>
-
+			<br>
 		  <p>For the phsyical infrastructure I have a <a
 				  href="https://kit.co/canerderici/homelab/6304502-sysracks-server-rack" class="lnk">Sysracks</a> 32U
 			  rack, a couple of Raspberry Pi's (one of them is periodically talking to Cloudflare for updating our
