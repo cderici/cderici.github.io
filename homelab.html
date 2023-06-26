@@ -163,31 +163,51 @@
 		height=248 /></a>
 	      </center>
 			<br>
-		  <p>For the phsyical infrastructure I have a <a
-				  href="https://kit.co/canerderici/homelab/6304502-sysracks-server-rack" class="lnk">Sysracks</a> 32U
-			  rack, a couple of Raspberry Pi's (one of them is periodically talking to Cloudflare for updating our
-			  upstream IP for
-			  ddns), an <a href="https://kit.co/canerderici/homelab/6304513-apc-ups-1500va-ups-b" class="lnk">APC
-				  UPS</a> to keep things alive for a little while to give enough time to shut down the system
-			  gracefully in case of power outages. I also hooked it up to the modem and the router to keep the
-			  internet alive for as long as possible. This is a good perk of having a UPS since my wife and I both work
-			  remotely
-			  from home. Our local setups are also hooked up to small UPSes to keep the power setup nice
-			  and clean.
-		  </p>
 
 		  <p>My future plans include doing a network upgrade with <a href="https://ui.com/us" class="lnk">Unifi</a>
 			  equipments, laying down a hardware firewall, as well as adding more compute to form clusters, improving
-			  power management, maybe adding a dedicated separate NAS server. Software-wise, I'd like to experiment
+			  power management, maybe adding a dedicated separate NAS server. I also need to work a little bit on the
+			  cooling. The room is in the basement so I don't have a too big problem there just yet, but we're
+			  getting there. I'm thinking installing a split AC to take care of that soon. Software-wise, I'd like to experiment
 			  more with Terraform on Kubernetes clusters with Juju using the <a
 					  href="https://github.com/juju/terraform-provider-juju" class="lnk">terraform
-				  juju provider</a> that I'm maintaining and developing.
+				  juju provider</a> that I'm maintaining and developing. You can check out a
+			  <a
+					  href="https://discourse.charmhub.io/t/a-generic-way-to-communicate-with-a-juju-controller-on-a-k8s-cluster-with-the-juju-terraform-provider/10967" class="lnk">discourse
+				  post</a> I wrote about it recently.
 		  </p>
 
 		  <br><br>
+
 	  </div>
 
+		<div class="w3-container w3-card w3-white  w3-margin-bottom w3-animate-opacity">
+			<h2 class="w3-text-grey w3-padding-16"><i
+					class="fa fa-gear fa-fw w3-margin-right w3-xxlarge w3-text-deep-orange"></i>Physical
+				Stuff</h2>
 
+			<div class="w3-container">
+				<p>For the phsyical infrastructure I have a <a
+						href="https://kit.co/canerderici/homelab/6304502-sysracks-server-rack" class="lnk">Sysracks</a> 32U
+					rack, a couple of Raspberry Pi's (one of them is periodically talking to Cloudflare for updating our
+					upstream IP for
+					ddns), an <a href="https://kit.co/canerderici/homelab/6304513-apc-ups-1500va-ups-b" class="lnk">APC
+						UPS</a> to keep things alive for a little while to give enough time to shut down the system
+					gracefully in case of power outages. I also hooked it up to the modem and the router to keep the
+					internet alive for as long as possible. This is a good perk of having a UPS since my wife and I both work
+					remotely
+					from home. Our local setups are also hooked up to small UPSes to keep the power setup nice
+					and clean.
+				</p>
+				<p>Here's the current list of physical gear that I have for the server room:</p>
+				<iframe src="https://kit.co/embed?url=https%3A%2F%2Fkit.co%2Fcanerderici%2Fhomelab" style="display: block; border: 0px; margin: 0 auto; width: 100%; height: 100vw; max-width: 700px; max-height: 700px" scrolling="no"></iframe>
+
+
+
+				<hr>
+			</div>
+
+		</div>
 	  <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 	  <!-- End Right Column -->
 	</div>
