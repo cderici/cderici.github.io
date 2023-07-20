@@ -1,0 +1,7 @@
+templates:
+  - name: Bug Report
+    about: Report a bug
+    filename: bugReport.yml
+  - name: Feature Request
+    about: Request a feature
+    filename: FeatureRequest.yml
