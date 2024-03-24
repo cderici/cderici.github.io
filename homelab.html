@@ -164,14 +164,35 @@
 	      </center>
 			<br>
 
-		  <p>My future plans include doing a network upgrade with <a href="https://ui.com/us" class="lnk">Unifi</a>
-			  equipments, laying down a hardware firewall, as well as adding more compute to form clusters, improving
-			  power management, maybe adding a dedicated separate NAS server. I also need to work a little bit on the
-			  cooling. The room is in the basement so I don't have a too big problem there just yet, but we're
-			  getting there. I'm thinking installing a split AC to take care of that soon. Software-wise, I'd like to experiment
-			  more with Terraform on Kubernetes clusters with Juju using the <a
-					  href="https://github.com/juju/terraform-provider-juju" class="lnk">terraform
-				  juju provider</a> that I'm maintaining and developing. You can check out a
+		  <p>I recently did a network upgrade with <a href="https://ui.com/us" class="lnk">Unifi</a>
+			  equipments. I set up the <a
+			  href="https://store.ui.com/us/en/pro/collections/unifi-dream-machine/products/udm-se?variant=UDM-SE"
+			  class="lnk">Dream Machine Special Edition</a> as the primary
+			  router. Google Fiber 2.5Gbit router became just a passthrough
+			  modem. I also added a layer 3 <a
+			  href="https://store.ui.com/us/en/pro/collections/unifi-switching-pro-max/products/usw-pro-max-24-poe?variant=USW-Pro-Max-24-PoE"
+			  class="lnk">Pro Max 24 PoE</a> switch to create some VLANs to
+			  isolate IoT devices and cameras etc in my network from the main
+			  compute devices. Also the smart <a
+			  href="https://store.ui.com/us/en/pro/collections/unifi-power-tech-power-distribution/products/usp-pdu-pro?variant=USP-PDU-Pro"
+			  class="lnk">Power Distribution Pro</a> became handy, as it
+			  constantly monitors the connection and whenever there's a
+			  fluctuation in the network or an outage, it automatically restarts
+			  the devices I designated (e.g. router, modem etc) to try to re-stabilize the network by itself. So no more waking up to a catastrophy in the mornings.
+			  </p>
+
+			  <p> My future plans include laying down a hardware firewall, as
+			  well as adding more compute to form clusters, improving power
+			  management (better UPS with more capacity), maybe adding a
+			  dedicated separate NAS server. I also need to work a little bit on
+			  the cooling. The room is in the basement so I don't have a too big
+			  problem there just yet, but we're getting there. I'm thinking
+			  installing a split AC to take care of that soon. Software-wise,
+			  I'd like to experiment more with Terraform on Kubernetes clusters
+			  with Juju using the <a
+			  href="https://github.com/juju/terraform-provider-juju"
+			  class="lnk">terraform juju provider</a> that I'm maintaining and
+			  developing. You can check out a
 			  <a
 					  href="https://discourse.charmhub.io/t/a-generic-way-to-communicate-with-a-juju-controller-on-a-k8s-cluster-with-the-juju-terraform-provider/10967" class="lnk">discourse
 				  post</a> I wrote about it recently.
