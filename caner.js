@@ -39,3 +39,35 @@ jQuery(document).ready(function() {
 	}
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const url = './docs/CanerDerici-resume.pdf';
+
+    // Initialize PDF.js
+    const pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+    // Asynchronous download of PDF
+    pdfjsLib.getDocument(url).promise.then(function(pdf) {
+        // Fetch the first page
+        pdf.getPage(1).then(function(page) {
+            const scale = 1.5;
+            const viewport = page.getViewport({ scale: scale });
+
+            // Prepare canvas using PDF page dimensions
+            const canvas = document.createElement('canvas');
+            const context = canvas.getContext('2d');
+            canvas.height = viewport.height;
+            canvas.width = viewport.width;
+
+            // Append the canvas to the pdf-viewer container
+            document.getElementById('pdf-viewer').appendChild(canvas);
+
+            // Render PDF page into canvas context
+            const renderContext = {
+                canvasContext: context,
+                viewport: viewport
+            };
+            page.render(renderContext);
+        });
+    });
+});
