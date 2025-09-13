@@ -1,269 +1,301 @@
-<!DOCTYPE html>
-<html>
-  <title>Caner Derici, Building a Community</title>
-  <meta charset="UTF-8">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home · Caner Derici, Ph.D.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="caner.css">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-  <link rel="icon" type="image/png" href="https://pbs.twimg.com/profile_images/1427014122827182083/epqkLDbm_400x400.jpg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
-  <link rel="stylesheet" href="css/lightbox.css">
 
-  <script src="js/jquery-1.11.0.min.js"></script>
-  <script src="js/lightbox.min.js"></script>
-  <script type="text/javascript" src="caner.js"></script>
-  <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+  
+  <link rel="stylesheet" href="/assets/css/caner.css">
+  <link rel="stylesheet" href="/assets/css/lightbox.css">
+</head>
+<body class="w3-flat-wet-asphalt">
+  <main id="content">
+    
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+  <div class="w3-row-padding">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146433729-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Left column -->
+    <div class="w3-quarter">
+      
+      
+      
 
-    gtag('config', 'UA-146433729-1');
+<div class="w3-white w3-text-grey w3-card-4 w3-round-xlarge">
+  <div class="w3-display-container" style="overflow:hidden">
+    <a href="/assets/img/content/profile41.jpg" data-lightbox="profil">
+      <img src="/assets/img/content/profile41.jpg" class="w3-round-xlarge" style="width:100%" alt="Avatar" />
+    </a>
+    <div class="w3-display-bottomleft w3-container w3-text-black">
+      <h2 class="w3-text-white">Caner Derici, Ph.D.</h2>
+    </div>
+  </div>
 
-const ytK = 'AIzaSyBhwBUD2fmybnQgx0Q7IUkPTWXmJH1jRKk';
-const ytI = 'UCQUqjj5SfL9vfJxJ53ygN7w';
+  <div class="w3-container">
+    <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-deep-orange"></i>Sandy, UT, USA</p>
+    <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-deep-orange"></i>
+      <a href="https://github.com/cderici" target="_blank" style="border-bottom:0"> cderici</a>
+    </p>
+    <p><i class="fa fa-link fa-fw w3-margin-right w3-large w3-text-deep-orange"></i>
+      <a href="https://dericilab.live" target="_blank" style="border-bottom:0">dericilab.live</a>
+    </p>
+    <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-deep-orange"></i>
+      <a href="mailto:caner@dericilab.live" target="_blank" style="border-bottom:0">caner@dericilab.live</a>
+    </p>
 
-fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${ytI}&key=${ytK}`)
-    .then(response => {
-	  //console.log("response json");
-  	  return response.json()
-    })
-    .then(data => {
-        console.log(data);
-        var sbCountDivText = document.getElementById('ytLi').innerHTML;
-        //console.log(sbCountDivText);
-        const subNum = data["items"][0].statistics.subscriberCount;
-        const vidCount = data["items"][0].statistics.videoCount;
-        const viewCount = data["items"][0].statistics.viewCount;
-        var strNew = sbCountDivText.replace(' many ', ' ' + subNum + ' ');
-        //console.log(strNew);
-        document.getElementById('ytLi').innerHTML = strNew + ', ' + vidCount + ' videos with ' + viewCount + ' total views!';
-    })
+    <div class="w3-container w3-center">
+      <p>
+        <a href="http://twitch.tv/lambda_cd" target="_blank" style="border-bottom:0"><i class="fa fa-twitch w3-margin-right w3-hover-opacity w3-large w3-text-deep-orange"></i></a>
+        <a href="https://www.youtube.com/channel/UCQUqjj5SfL9vfJxJ53ygN7w" target="_blank" style="border-bottom:0"><i class="fa fa-youtube w3-margin-right w3-hover-opacity w3-large w3-text-deep-orange"></i></a>
+        <a href="https://www.facebook.com/caner.derici.3" target="_blank" style="border-bottom:0"><i class="fa fa-facebook-official w3-margin-right w3-hover-opacity w3-large w3-text-deep-orange"></i></a>
+        <a href="https://www.instagram.com/caner.derici/" target="_blank" style="border-bottom:0"><i class="fa fa-instagram w3-margin-right w3-hover-opacity w3-large w3-text-deep-orange"></i></a>
+        <a href="https://tr.linkedin.com/in/caner-derici-0619b0aa" target="_blank" style="border-bottom:0"><i class="fa fa-linkedin w3-margin-right w3-hover-opacity w3-large w3-text-deep-orange"></i></a>
+        <a href="https://twitter.com/canerderici" target="_blank" style="border-bottom:0"><i class="fa fa-twitter w3-margin-right w3-hover-opacity w3-large w3-text-deep-orange"></i></a>
+      </p>
+    </div>
+  </div>
+</div>
 
-  </script>
-
-  <body class="w3-flat-wet-asphalt">
-
-    <!-- Page Container -->
-    <div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-      <!-- The Grid -->
-      <div class="w3-row-padding">
-
-	<!-- Left Column -->
-	<div class="w3-quarter">
-
-	  <div class="w3-white w3-text-grey w3-card-4">
-            <div class="w3-display-container">
-              <img src="img/content/profile41.jpg" style="width:100%" alt="Avatar">
-              <div class="w3-display-bottomleft w3-container w3-text-black">
-							<h2 class="w3-text-white">Caner Derici, Ph.D.</h2>
-						</div>
-					</div>
-					<div class="w3-container">
-						<p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-deep-orange"></i>Sandy, UT, USA
-						</p>
-						<p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-deep-orange"></i><a
-								href="https://github.com/cderici" style="border-bottom: 0px" target="_blank">cderici</a>
-						</p>
-						<p><i class="fa fa-link fa-fw w3-margin-right w3-large w3-text-deep-orange"></i><a href="https://dericilab.live" style="border-bottom: 0px" target="_blank">dericilab.live</a>
-						</p>
-						<p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-deep-orange"></i><a href="mailto:caner@dericilab.live" style="border-bottom: 0px" target="_blank">caner@dericilab.live</a></p>
-
-	      <div class="w3-container w3-center">
-		<p><a href="http://twitch.tv/lambda_cd"  target="_blank" style="border-bottom: 0px"><i class="fa fa-twitch w3-margin-right w3-hover-opacity w3-large w3-text-deep-orange"></i></a>
-		  <a href="https://www.youtube.com/channel/UCQUqjj5SfL9vfJxJ53ygN7w"  target="_blank" style="border-bottom: 0px"><i class="fa fa-youtube w3-margin-right w3-hover-opacity w3-large w3-text-deep-orange"></i></a>
-		  <a href="https://www.facebook.com/caner.derici.3"  target="_blank" style="border-bottom: 0px"><i class="fa fa-facebook-official w3-margin-right w3-hover-opacity w3-large w3-text-deep-orange"></i></a>
-		  <a href="https://www.instagram.com/caner.derici/" style="border-bottom: 0px" target="_blank"><i class="fa fa-instagram w3-margin-right w3-hover-opacity w3-large w3-text-deep-orange"></i></a>
-		  <a href="https://tr.linkedin.com/in/caner-derici-0619b0aa" style="border-bottom: 0px" target="_blank"><i class="fa fa-linkedin w3-margin-right w3-hover-opacity w3-large w3-text-deep-orange"></i></a>
-		  <a href="https://twitter.com/canerderici" style="border-bottom: 0px" target="_blank"><i class="fa fa-twitter w3-margin-right w3-hover-opacity w3-large w3-text-deep-orange"></i></a>
-		</p>
-	      </div>
-            </div>
-	  </div><br>
-
-	  <a href="#" class="back-to-top" style="border-bottom: 0px;">
-	    <i class="fa fa-chevron-circle-up w3-text-deep-orange w3-xlarge"></i>
-	  </a>
-
-	  <!-- End Left Column -->
-	</div>
-
-	<!-- Right Column -->
-	<div class="w3-threequarter">
-	  <div class="w3-bar">
-	    <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
-	    <a href="cv.html" class="w3-bar-item w3-button w3-mobile">Professional</a>
-		  <a href="homelab.html" class="w3-bar-item w3-button w3-mobile">HomeLab</a>
-	    <a href="content.html" class="w3-bar-item w3-button w3-mobile w3-hover-deep-orange w3-deep-orange">Building a Community</a>
-		  <a href="bike.html" class="w3-bar-item w3-button w3-mobile">Bike</a>
-	    <a href="music.html" class="w3-bar-item w3-button w3-mobile">Music</a>
-	    <a href="artsy.html" class="w3-bar-item w3-button w3-mobile">Artsy</a>
-	    <a href="travel.html" class="w3-bar-item w3-button w3-mobile">Travel</a>
-	    <a href="arch.html" class="w3-bar-item w3-button w3-mobile">Arch</a>
-	    <a href="masters.html" class="w3-bar-item w3-button w3-mobile w3-right">Masters Tribute Page</a>
-
-	  </div>
-	  <div class="w3-container w3-card w3-white  w3-margin-bottom w3-animate-opacity">
-	    <!-- <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-linux fa-fw w3-margin-right w3-xxlarge w3-text-deep-orange"></i>Introduction</h2> -->
-	    <div class="w3-container w3-margin-left w3-margin-top w3-margin-bottom">
-	      <p>In 2020 I started creating content on Twitch as a hobby, and I successfully built a growing community around: (as of 2021)<p>
-		<ul class="w3-ul">
-		  <li>  <a href="http://twitch.tv/lambda_cd" class="lnk">Twitch affiliate channel</a> with 538 followers & 19 subscribers.</li>
-		  <li> <a href="http://discord.gg/eZVpkjhb" class="lnk">Discord</a> server with 224 people</li>
-		  <li id="ytLi"> <a href="https://www.youtube.com/channel/UCQUqjj5SfL9vfJxJ53ygN7w" class="lnk">YouTube</a> channel with many subs</li>
-		  <script type="text/javascript">
-		  </script>
-		</ul>
-	      </p>
-	      <p>Maybe not the greatest numbers out there, but I'm proud nontheless :) </p>
-	      <p>The types of content I make include <b>teaching programming to
-		  beginners</b>, <b>StarCraft II</b> gameplay/analysis/improvement,
-		and <b>live game development</b> for fun. Below you can
-		find some of the highlights and directions to my content
-		(mostly in Turkish).</p>
-	    </div>
-	  </div>
-
-	  <!-- Play <i class="fa fa-youtube fa-fw w3-margin-right w3-xxlarge w3-text-deep-orange"></i> -->
-	  <div class="w3-container w3-card w3-white  w3-margin-bottom w3-animate-opacity">
-	    <br>
-	    <a href="https://www.youtube.com/channel/UCQUqjj5SfL9vfJxJ53ygN7w"
-	       class="lnk"> <img src="img/content/yt_logo.png"
-	      width="20%" align="right"/></a>
-	    <!-- <h2 class="w3-text-grey w3-padding-16"></h2> -->
-
-	    <div class="w3-container">
-	      <p>Here are some of the videos
-	      on <a href="https://www.youtube.com/channel/UCQUqjj5SfL9vfJxJ53ygN7w"
-	      class="lnk">my channel</a>:</p>
-
-	      <div class="w3-row-padding">
-		<div class="w3-col m3" style="width:50%">
-		  <p><i> In this video I'm writing the same program
-		      (binary search) in C++, Python and Racket,
-		      trying to make people see that for the beginners
-		      there isn't much difference between
-		      languages. The title of the video is <b>"Start
-		      Programming! Doesn't matter which language,
-		      start today, start now!"</b>
-		  </i></p>
-		</div>
-		<div class="w3-col m3" style="width:50%">
-		  <iframe width="300" height="168" src="https://www.youtube.com/embed/UvYrdeuknIk?start=1283" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-	      </div>
-	      <div class="w3-row-padding">
-		<div class="w3-col m3" style="width:50%">
-		  <p><i> In this one I'm introducing Object Oriented
-		      Programming to the beginners.
-		  </i></p>
-		</div>
-		<div class="w3-col m3" style="width:50%">
-		  <iframe width="300" height="168" src="https://www.youtube.com/embed/P6liuF9rz-A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-	      </div>
-	      <div class="w3-row-padding">
-		<div class="w3-col m3" style="width:50%">
-		  <p><i>
-		      I like casting professional StarCraft II games every once in a while :)
-		  </i></p>
-		</div>
-		<div class="w3-col m3" style="width:50%">
-		  <iframe width="300" height="168" src="https://www.youtube.com/embed/ywRTMhhYZ2k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-	      </div>
-	    <hr>
-	    </div>
-	  </div>
-
-	  <!-- Twitch <i class="fa fa-twitch fa-fw w3-margin-right w3-xxlarge w3-text-deep-orange"></i> -->
-	  <div class="w3-container w3-card w3-white  w3-margin-bottom w3-animate-opacity">
-	    <br>
-	    <a href="http://twitch.tv/lambda_cd"
-	      class="lnk"><img src="img/content/twitch.png"
-	      width="20%" align="right" /></a>
-	    <!-- <h2 class="w3-text-grey w3-padding-16">Twitch</h2> -->
-
-	    <div class="w3-container">
-	      <p>Here are some of the highlights from my broadcasts
-	      on <a href="http://twitch.tv/lambda_cd"
-	      class="lnk">my channel</a>:</p>
-
-	      <div class="w3-row-padding">
-		<div class="w3-col m3" style="width:30%">
-		  <p><i> While doing live game development on Twitch,
-		      I modified a Twitch chat bot I wrote to receive
-		      keypress events from the chat into my computer
-		      (where the bot runs). That allowed people in the
-		      Twitch chat to play the game we're developing on
-		      Unity on my computer :)
-		      <br><br>
-		      <a href="https://www.twitch.tv/videos/589280502?time=0h2m30s" class="lnk">[Video Link]</a> (if the player doesn't load)
-		  </i></p>
-		</div>
-		<div class="w3-col m3" style="width:70%">
-			<iframe src="https://player.twitch.tv/?video=589280502&parent=cderici.github.io&autoplay=false" frameborder="0"
-					allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
-		</div>
-	      </div>
-	      <div class="w3-row-padding">
-		<div class="w3-col m3" style="width:30%">
-		  <p><i> We were following a tutorial with the chat to
-		      develop on Unity a platform game of rolling a
-		      ball to collect diamonds.
-		      <br><br>
-		      <a href="https://www.twitch.tv/videos/574815461?time=0h21m48s" class="lnk">[Video Link]</a> (if the player doesn't load)
-		  </i></p>
-		</div>
-		<div class="w3-col m3" style="width:70%">
-		  <iframe src="http://player.twitch.tv/?video=574815461&time=0h21m48s&parent=cderici.github.io&autoplay=false"
-				  height="378" width="620"
-			  frameborder="0"
-			  scrolling="false"
-			  allowfullscreen="true">
-		  </iframe>
-		</div>
-	      </div>
-	      <div class="w3-row-padding">
-		<div class="w3-col m3" style="width:30%">
-		  <p><i>
-		      There were nice moments during gameplays, this was from one of the StarCraft broodwar sessions :)
-		      <br><br>
-		      <a href="https://www.twitch.tv/videos/558868402" class="lnk">[Video Link]</a> (if the player doesn't load)
-		  </i></p>
-		</div>
-		<div class="w3-col m3" style="width:70%">
-			<iframe src="http://player.twitch.tv/?video=558868402&parent=localhost&autoplay=false"
-					height="378" width="620"
-			  frameborder="0"
-			  scrolling="false"
-			  allowfullscreen="true">
-		  </iframe>
-		</div>
-	      </div>
-
-	    <hr>
-	    </div>
-
-	  </div>
+<br>
+<a href="#" class="back-to-top" style="border-bottom:0">
+  <i class="fa fa-chevron-circle-up w3-text-deep-orange w3-xlarge"></i>
+</a>
 
 
-	  <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
-	  <!-- End Right Column -->
-	</div>
-
-	<!-- End Grid -->
-      </div>
-
-      <!-- End Page Container -->
     </div>
 
-  </body>
+    <!-- Right column -->
+    <div class="w3-threequarter">
+      
+<div class="w3-bar">
+  
+  
+
+  
+    
+    
+
+    <a href="/index.html"
+       class="w3-bar-item w3-button w3-mobile w3-round-medium  w3-hover-deep-orange">
+      Home
+    </a>
+  
+    
+    
+
+    <a href="/cv.html"
+       class="w3-bar-item w3-button w3-mobile w3-round-medium  w3-hover-deep-orange">
+      Professional
+    </a>
+  
+    
+    
+
+    <a href="/homelab.html"
+       class="w3-bar-item w3-button w3-mobile w3-round-medium  w3-hover-deep-orange">
+      HomeLab
+    </a>
+  
+    
+    
+
+    <a href="/content.html"
+       class="w3-bar-item w3-button w3-mobile w3-round-medium w3-deep-orange w3-hover-deep-orange">
+      Building a Community
+    </a>
+  
+    
+    
+
+    <a href="/bike.html"
+       class="w3-bar-item w3-button w3-mobile w3-round-medium  w3-hover-deep-orange">
+      Bike
+    </a>
+  
+    
+    
+
+    <a href="/music.html"
+       class="w3-bar-item w3-button w3-mobile w3-round-medium  w3-hover-deep-orange">
+      Music
+    </a>
+  
+    
+    
+
+    <a href="/artsy.html"
+       class="w3-bar-item w3-button w3-mobile w3-round-medium  w3-hover-deep-orange">
+      Artsy
+    </a>
+  
+    
+    
+
+    <a href="/travel.html"
+       class="w3-bar-item w3-button w3-mobile w3-round-medium  w3-hover-deep-orange">
+      Travel
+    </a>
+  
+    
+    
+
+    <a href="/arch.html"
+       class="w3-bar-item w3-button w3-mobile w3-round-medium  w3-hover-deep-orange">
+      Arch
+    </a>
+  
+    
+    
+
+    <a href="/masters.html"
+       class="w3-bar-item w3-button w3-mobile w3-round-medium  w3-hover-deep-orange">
+      Masters Tribute Page
+    </a>
+  
+</div>
+
+
+      <!-- Intro -->
+      <div class="w3-container w3-card w3-white w3-margin-bottom w3-animate-opacity w3-round-large">
+        <div class="w3-container w3-margin-left w3-margin-top w3-margin-bottom">
+          <p>In 2020 I started creating content on Twitch as a hobby, and I successfully built a growing community around: (as of 2021)</p>
+          <ul class="w3-ul">
+            <li><a href="http://twitch.tv/lambda_cd" class="lnk">Twitch affiliate channel</a> with 538 followers &amp; 19 subscribers.</li>
+            <li><a href="http://discord.gg/eZVpkjhb" class="lnk">Discord</a> server with 224 people</li>
+			<li id="ytLi">
+  <a class="lnk" href="https://www.youtube.com/channel/UCQUqjj5SfL9vfJxJ53ygN7w">
+    YouTube
+  </a> channel with … subs,
+   videos,  total views!
+</li>
+          </ul>
+
+          <p>Maybe not the greatest numbers out there, but I'm proud nonetheless :)</p>
+          <p>The types of content I make include <b>teaching programming to beginners</b>, <b>StarCraft II</b> gameplay/analysis/improvement, and <b>live game development</b> for fun. Below you can find some highlights and links to my content (mostly in Turkish).</p>
+        </div>
+      </div>
+
+      <!-- YouTube block -->
+      <div class="w3-container w3-card w3-white w3-margin-bottom w3-animate-opacity w3-round-large">
+        <br>
+        <a href="https://www.youtube.com/channel/UCQUqjj5SfL9vfJxJ53ygN7w" class="lnk">
+          <img src="/assets/img/content/yt_logo.png" width="20%" align="right" alt="YouTube">
+        </a>
+
+        <div class="w3-container">
+          <p>Here are some of the videos on <a href="https://www.youtube.com/channel/UCQUqjj5SfL9vfJxJ53ygN7w" class="lnk">my channel</a>:</p>
+
+          <div class="w3-row-padding">
+            <div class="w3-col m3" style="width:50%">
+              <p><i>In this video I'm writing the same program (binary search) in C++, Python and Racket, showing beginners that there isn’t much difference at the start. Title: <b>"Start Programming! Doesn't matter which language, start today, start now!"</b></i></p>
+            </div>
+            <div class="w3-col m3" style="width:50%">
+              <iframe width="300" height="168" src="https://www.youtube.com/embed/UvYrdeuknIk?start=1283" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="w3-row-padding">
+            <div class="w3-col m3" style="width:50%">
+              <p><i>Introducing Object-Oriented Programming to beginners.</i></p>
+            </div>
+            <div class="w3-col m3" style="width:50%">
+              <iframe width="300" height="168" src="https://www.youtube.com/embed/P6liuF9rz-A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="w3-row-padding">
+            <div class="w3-col m3" style="width:50%">
+              <p><i>I like casting professional StarCraft II games every once in a while :)</i></p>
+            </div>
+            <div class="w3-col m3" style="width:50%">
+              <iframe width="300" height="168" src="https://www.youtube.com/embed/ywRTMhhYZ2k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <hr>
+        </div>
+      </div>
+
+      <!-- Twitch block -->
+      <div class="w3-container w3-card w3-white w3-margin-bottom w3-animate-opacity w3-round-large">
+        <br>
+        <a href="http://twitch.tv/lambda_cd" class="lnk">
+          <img src="/assets/img/content/twitch.png" width="20%" align="right" alt="Twitch">
+        </a>
+
+        <div class="w3-container">
+          <p>Here are some highlights from my broadcasts on <a href="http://twitch.tv/lambda_cd" class="lnk">my channel</a>:</p>
+
+          <div class="w3-row-padding">
+            <div class="w3-col m3" style="width:30%">
+              <p><i>During live game dev, I modified a Twitch chat bot to relay keypress events from chat into my computer, so viewers could play the Unity game we were developing!<br><br>
+                <a href="https://www.twitch.tv/videos/589280502?time=0h2m30s" class="lnk">[Video Link]</a> (if the player doesn't load)
+              </i></p>
+            </div>
+            <div class="w3-col m3" style="width:70%">
+              <iframe
+                src="https://player.twitch.tv/?video=589280502&autoplay=false&parent=localhost&parent=dericilab.live"
+                frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620">
+              </iframe>
+            </div>
+          </div>
+
+          <div class="w3-row-padding">
+            <div class="w3-col m3" style="width:30%">
+              <p><i>Following a Unity tutorial with chat to build a rolling-ball platformer.<br><br>
+                <a href="https://www.twitch.tv/videos/574815461?time=0h21m48s" class="lnk">[Video Link]</a> (if the player doesn't load)
+              </i></p>
+            </div>
+            <div class="w3-col m3" style="width:70%">
+              <iframe
+                src="https://player.twitch.tv/?video=574815461&time=0h21m48s&autoplay=false&parent=localhost&parent=dericilab.live"
+                height="378" width="620" frameborder="0" scrolling="no" allowfullscreen="true">
+              </iframe>
+            </div>
+          </div>
+
+          <div class="w3-row-padding">
+            <div class="w3-col m3" style="width:30%">
+              <p><i>Nice moments from StarCraft: Brood War sessions :)<br><br>
+                <a href="https://www.twitch.tv/videos/558868402" class="lnk">[Video Link]</a> (if the player doesn't load)
+              </i></p>
+            </div>
+            <div class="w3-col m3" style="width:70%">
+              <iframe
+                src="https://player.twitch.tv/?video=558868402&autoplay=false&parent=localhost&parent=dericilab.live"
+                height="378" width="620" frameborder="0" scrolling="no" allowfullscreen="true">
+              </iframe>
+            </div>
+          </div>
+
+          <hr>
+        </div>
+      </div>
+
+      <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+    </div><!-- /w3-threequarter -->
+
+  </div><!-- /w3-row-padding -->
+</div><!-- /w3-content -->
+
+
+  </main>
+  <footer class="w3-container w3-right">
+  <small>
+    © 2025 Caner Derici, Ph.D.
+  </small>
+</footer>
+
+
+  
+  <script src="/assets/js/jquery-1.11.0.min.js"></script>
+  <script src="/assets/js/lightbox.min.js"></script>
+  <script src="/assets/js/caner.js"></script>
+</body>
 </html>
