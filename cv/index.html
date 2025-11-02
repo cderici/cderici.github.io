@@ -198,7 +198,7 @@
 
 <br>
 <!-- View Resume PDF -->
-	<details class="pdf-viewer w3-margin-top">
+	<details class="pdf-viewer w3-margin-top w3-center">
   <summary class="w3-button w3-deep-orange w3-text-white w3-padding-large w3-round-large w3-left-align">
     <i class="fa fa-file-pdf-o w3-margin-right"></i>
     View Resume
@@ -239,32 +239,40 @@
     <div class="w3-container">
 
 	  <p>
-		<b>Dissertation:</b><a href="https://github.com/cderici/dissertation/releases/download/latest-pdf/thesis.pdf" class="lnk">Self-Hosting Functional Programming Languages on Meta-Tracing JIT Compilers</a>
+		<b>Dissertation:</b> <a href="https://github.com/cderici/dissertation/releases/download/latest-pdf/thesis.pdf" class="lnk">Self-Hosting Functional Programming Languages on Meta-Tracing JIT Compilers</a>
       </p>
 
-     <details>
-      <summary class="w3-padding-16 w3-round-large w3-left-align w3-btn"><h6 class="w3-opacity"><strong>View PhD Diploma</strong></h6></summary>
-      <div class="w3-container">
+
+      <p>
+        Specialized in Programming Languages (PL) under the supervision of <a href="http://homes.sice.indiana.edu/samth/" class="lnk">Sam Tobin‑Hochstadt</a>, minored in Logic at the <a href="http://www.philosophy.indiana.edu/areas/ll.shtml" class="lnk">Department of Philosophy</a>.
+      </p>
+      <p>
+        My work focuses on fast run‑times of dynamic languages. In the first phase of my research, I investigated the effects of using Racket byte‑code compiler as a frontend for Pycket--studying optimizations like heavy inlining and lambda lifting and their effects on Pycket's run-time.
+      </p>
+      <p>
+        When Racket became more portable and <a href="https://blog.racket-lang.org/2018/01/racket-on-chez-status.html" class="lnk">started adopting Chez Scheme as its primary run time</a>, I pivoted to help that effort. We had a rudimentary Racket implementation, <a href="https://github.com/pycket/pycket" class="lnk">Pycket</a>, a meta‑tracing JIT compiler built on <a href="https://rpython.readthedocs.io/en/latest/" class="lnk">RPython framework</a>. It was designed to demonstrate that <a href="https://github.com/pycket/pycket/tree/master/papers" class="lnk">efficient sound gradual typing is possible</a>. I helped make Racket more portable and adopt Chez Scheme (see <a href="#pub-racket-on-chez" class="lnk">publication</a>). Mimicking Racket’s self‑hosting on Racket‑on‑Chez, I turned Pycket into a full implementation of Racket with a meta‑tracing JIT as its run‑time.
+      </p>
+      <p>
+        <a href="https://pypy.org/" class="lnk">PyPy</a> showed that fast prototyping of efficient run‑times for dynamic languages is possible through meta‑interpretation. My work takes this a step further to show that fast prototyping of efficient run‑times for <strong>self‑hosting</strong> dynamic languages is achievable.
+      </p>
+      <p>
+        Currently <a href="https://github.com/pycket/pycket" class="lnk">Pycket</a> works as a runtime for full self-hosting Racket, including green threads via engines and full rktio via ffi--essentially no different than Racket on Chez.     </p>
+		<p>
+		My <a href="https://github.com/cderici/dissertation/releases/download/latest-pdf/thesis.pdf" class="lnk">dissertation</a> contains all the tecnical details on how this is achieved for the first time ever, along with a full performance investigation of self-hosting a production-grade language on a tracing JIT compiler.
+		</p>
+	<details class="pdf-viewer w3-margin-top w3-center">
+  <summary class="w3-button w3-deep-orange w3-text-white w3-padding-large w3-round-large w3-left-align">
+    <i class="fa fa-file-pdf-o w3-margin-right"></i>
+    View PhD Diploma
+    <span class="w3-small w3-opacity w3-margin-left">expands below</span>
+  </summary>
+
+      <div class="w3-container w3-margin-top">
         <iframe src="/assets/docs/DericiPhD_Diploma.pdf" width="100%" height="1200px"></iframe>
       </div>
     </details>
 
 
-      <p>
-        Specializing in Programming Languages (PL) under the supervision of <a href="http://homes.sice.indiana.edu/samth/" class="lnk">Sam Tobin‑Hochstadt</a>, minoring in Logic at the <a href="http://www.philosophy.indiana.edu/areas/ll.shtml" class="lnk">Department of Philosophy</a>.
-      </p>
-      <p>
-        I work on fast run‑times of dynamically typed languages, particularly Racket. Initially, I investigated the effects of using the Racket byte‑code compiler as a front end for Pycket—studying optimizations like heavy inlining and lambda lifting and their effects on the Pycket run‑time.
-      </p>
-      <p>
-        When Racket decided to become more portable and <a href="https://blog.racket-lang.org/2018/01/racket-on-chez-status.html" class="lnk">started adopting Chez Scheme as its run time</a>, I pivoted to help that effort. We had a rudimentary Racket implementation, <a href="https://github.com/pycket/pycket" class="lnk">Pycket</a>, a meta‑tracing JIT compiler automatically generated by the <a href="https://rpython.readthedocs.io/en/latest/" class="lnk">RPython framework</a>. It was designed to demonstrate that <a href="https://github.com/pycket/pycket/tree/master/papers" class="lnk">efficient sound gradual typing is possible</a>. I helped make Racket more portable and adopt Chez Scheme fully:contentReference[oaicite:0]{index=0}. Mimicking Racket’s self‑hosting on Racket‑on‑Chez, I turned Pycket into a full implementation of Racket with a meta‑tracing JIT as its run‑time:contentReference[oaicite:1]{index=1}.
-      </p>
-      <p>
-        <a href="https://pypy.org/" class="lnk">PyPy</a> showed that fast prototyping of efficient run‑times for dynamic languages is possible through meta‑interpretation. My work takes this a step further to show that fast prototyping of efficient run‑times for <strong>self‑hosting</strong> dynamic languages is achievable:contentReference[oaicite:2]{index=2}.
-      </p>
-      <p>
-        Currently <a href="https://github.com/pycket/pycket" class="lnk">Pycket</a> runs as fast as before on prior benchmarks, but self‑hosting introduces giant dispatch loops—similar to issues Mozilla encountered with <a href="https://blog.mozilla.org/nnethercote/category/tracemonkey/" class="lnk">TraceMonkey</a>. You often lose more when slow than you gain when fast. My work suggests workarounds and shows that an efficient run‑time with a meta‑tracing JIT is still possible for fast prototyping of self‑hosting dynamic languages:contentReference[oaicite:3]{index=3}.
-      </p>
     </div>
   </details>
 
@@ -639,7 +647,7 @@
   </h2>
 
   <ul class="pub-list">
-    <li>
+    <li id="pub-racket-on-chez">
       <span class="pub-title"><em>Rebuilding Racket on Chez Scheme (Experience Report)</em></span> -
       <a href="/assets/docs/papers/icfp19-rrocs.pdf" class="lnk">pdf</a> /
       <a href="https://www.cs.utah.edu/plt/rkt-on-chez" class="lnk">supplementary material</a><br>
@@ -665,9 +673,9 @@
     </li>
 
     <li>
-      <span class="pub-title"><em>Worldwithweb: A compiler from world applications to JavaScript</em></span> —
-      <a href="/assets/docs/papers/worldwithweb.pdf" class="lnk">pdf</a><br>
-      <span class="pub-info">Emre Başar, Caner Derici, Çağdaş Şenol. Scheme and Functional Programming 2009, Boston, August 2009.</span>
+      <span class="pub-title"><em>Worldwithweb: A compiler from world applications to JavScript</em></spn> —
+      < href="/ssets/docs/ppers/worldwithweb.pdf" clss="lnk">pdf</><br>
+      <spn class="pub-info">Emre Başar, Caner Derici, Çağdaş Şenol. Scheme and Functional Programming 2009, Boston, August 2009.</span>
     </li>
   </ul>
   <br>
