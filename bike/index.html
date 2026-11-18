@@ -2,279 +2,229 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Home · Caner Derici, PhD</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bike · Caner Derici, PhD</title>
+  <meta name="description" content="Caner Derici, PhD — Applied Scientist at Amazon Web Services, working on compilers, programming languages and formal verification.">
+  <meta name="theme-color" content="#0d1422">
+  <link rel="canonical" href="https://home.dericilab.live/bike/">
 
   
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Caner Derici, PhD">
+  <meta property="og:title" content="Bike · Caner Derici, PhD">
+  <meta property="og:description" content="Caner Derici, PhD — Applied Scientist at Amazon Web Services, working on compilers, programming languages and formal verification.">
+  <meta property="og:url" content="https://home.dericilab.live/bike/">
+  <meta property="og:image" content="https://home.dericilab.live/assets/img/og-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Caner Derici, PhD, Applied Scientist at Amazon – AWS">
+  <meta name="twitter:card" content="summary_large_image">
 
   
-  <link rel="stylesheet" href="/assets/css/caner.css">
-  <link rel="stylesheet" href="/assets/css/lightbox.css">
+  <link rel="preload" href="/assets/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script type="module" src="/assets/js/main.js"></script>
+  
+  <style>/* Old/new look switch, shared by the new site (inlined in page.njk) and the
+   classic snapshot (/classic/look-switch.css). Plain values, no site tokens,
+   so it renders the same on top of either design. */
+@view-transition { navigation: auto; }
+::view-transition-old(root),
+::view-transition-new(root) { animation-duration: .32s; }
+
+.look-switch {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px 8px 11px;
+  border: 1px solid #2b3954;
+  border-radius: 999px;
+  background: rgb(21 30 48 / .86);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 24px -10px rgb(0 0 0 / .7);
+  color: #e8ecf3 !important;
+  font: 500 13px/1 "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
+  letter-spacing: .02em;
+  text-decoration: none !important;
+  transition: border-color .14s, box-shadow .2s, translate .14s cubic-bezier(.2, .8, .2, 1);
+}
+.look-switch:hover {
+  border-color: #ff7a33;
+  box-shadow: 0 0 22px -6px #ff7a33;
+  translate: 0 -1px;
+}
+.look-switch:focus-visible { outline: 2px solid #55cfe8; outline-offset: 3px; }
+.look-switch svg { width: 16px; height: 16px; flex: none; color: #ff7a33; }
+@media print { .look-switch { display: none; } }
+</style>
+  <script>// Old/new look switch: crossfade only when switching designs (in browsers
+// with cross-document view transitions); every other navigation stays
+// instant. Runs in <head> so `pagereveal` is caught before the first paint.
+(() => {
+  const KEY = "look-switch";
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const flagged = () => { try { return sessionStorage.getItem(KEY) === "1"; } catch { return false; } };
+  // skipping rejects the transition's promises; mark them handled so nothing is logged
+  const skip = (vt) => {
+    for (const k of ["ready", "finished", "updateCallbackDone"]) vt[k]?.catch(() => {});
+    vt.skipTransition();
+  };
+  addEventListener("pageswap", (e) => {
+    if (e.viewTransition && (reduce || !flagged())) skip(e.viewTransition);
+  });
+  addEventListener("pagereveal", (e) => {
+    const switching = flagged();
+    try { sessionStorage.removeItem(KEY); } catch {}
+    if (e.viewTransition && (reduce || !switching)) skip(e.viewTransition);
+  });
+  addEventListener("click", (e) => {
+    if (e.target.closest?.(".look-switch")) { try { sessionStorage.setItem(KEY, "1"); } catch {} }
+  }, true);
+})();
+</script>
 
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
-  <link rel="icon" type="image/png" sizes="180x180" href="/favicon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">
+  <link rel="apple-touch-icon" href="/favicon-180x180.png">
   <link rel="manifest" href="/site.webmanifest">
-
 </head>
-<body class="w3-flat-wet-asphalt">
-  <main id="content">
-    
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-  <div class="w3-row-padding">
+<body data-glow="psi">
+  <a class="skip-link" href="#content">Skip to content</a>
 
-    <!-- Left column -->
-    <div class="w3-quarter">
-      
-      
+  <div class="page">
+    <aside class="sidebar">
       
 
-<div class="left-card w3-card-4 w3-round-xlarge">
-  <div class="w3-display-container" style="overflow:hidden">
-    <a href="/assets/img/bike/harley-profile-big.jpg" data-lightbox="profil">
-      <img src="/assets/img/bike/harley-profile.jpg" class="w3-round-xlarge" style="width:100%" alt="Avatar" />
+
+<div class="frame profile">
+  <div class="panel">
+    <a class="photo" href="/img/GgDmr8fcE6-2000.webp" data-lightbox="">
+      <img src="/img/kHejPqbAPJ-400.webp" alt="Photo of Caner Derici, PhD" sizes="(max-width: 880px) 420px, 330px" loading="eager" fetchpriority="high" decoding="async" width="400" height="300" srcset="/img/kHejPqbAPJ-400.webp 400w, /img/kHejPqbAPJ-800.webp 800w, /img/kHejPqbAPJ-1600.webp 1600w">
+      <span class="name">Caner Derici, PhD</span>
     </a>
-    <div class="w3-display-bottomleft w3-container w3-text-black">
-      <h2 class="w3-text-white">Caner Derici, PhD</h2>
-    </div>
+
+    <ul class="facts">
+      <li class="role"><svg class="icon icon-briefcase" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg>Applied Scientist</li>
+      <li class="role"><svg class="icon icon-building-2" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path><path d="M10 6h4"></path><path d="M10 10h4"></path><path d="M10 14h4"></path><path d="M10 18h4"></path></svg>Amazon – AWS</li>
+      <li><svg class="icon icon-map-pin" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>Austin, TX, USA</li>
+      <li><svg class="icon icon-github" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg><a href="https://github.com/cderici" rel="me">cderici</a></li>
+      <li><svg class="icon icon-link" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg><a href="https://dericilab.live">dericilab.live</a></li>
+      <li><svg class="icon icon-mail" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg><a href="mailto:caner@dericilab.live">caner@dericilab.live</a></li>
+    </ul>
+
+    <ul class="socials">
+      <li><a href="https://www.linkedin.com/in/caner-derici-0619b0aa/" rel="me"><svg class="icon icon-linkedin" role="img" aria-label="LinkedIn" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
+      <li><a href="https://www.instagram.com/caner.derici/" rel="me"><svg class="icon icon-instagram" role="img" aria-label="Instagram" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a></li>
+      <li><a href="https://www.facebook.com/caner.derici.3" rel="me"><svg class="icon icon-facebook" role="img" aria-label="Facebook" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+      <li><a href="https://x.com/canerderici" rel="me"><svg class="icon icon-x" role="img" aria-label="X" focusable="false" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"></path></svg></a></li>
+      <li><a href="https://www.youtube.com/channel/UCQUqjj5SfL9vfJxJ53ygN7w" rel="me"><svg class="icon icon-youtube" role="img" aria-label="YouTube" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg></a></li>
+      <li><a href="https://www.twitch.tv/lambda_cd" rel="me"><svg class="icon icon-twitch" role="img" aria-label="Twitch" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7"></path></svg></a></li>
+    </ul>
   </div>
+</div>
 
-  <div class="w3-container">
-    <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-deep-orange"></i>Sandy, UT, USA</p>
-    <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-deep-orange"></i>
-      <a href="https://github.com/cderici" target="_blank" class="no-underline" style="border-bottom:0"> cderici</a>
-    </p>
-    <p><i class="fa fa-link fa-fw w3-margin-right w3-large w3-text-deep-orange"></i>
-      <a href="https://dericilab.live" target="_blank" class="no-underline" style="border-bottom:0">dericilab.live</a>
-    </p>
-    <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-deep-orange"></i>
-      <a href="mailto:caner@dericilab.live" target="_blank" class="no-underline" style="border-bottom:0">caner@dericilab.live</a>
-    </p>
+    </aside>
 
-    <div class="w3-container w3-center">
+    <div class="column">
+      <nav class="site-nav" aria-label="Main">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/cv/">Resume/CV</a></li>
+    
+      <li><a href="/homelab/">HomeLab</a></li>
+    
+      <li><a href="/content/">Building a Community</a></li>
+    
+      <li><a href="/bike/" aria-current="page">Bike</a></li>
+    
+      <li><a href="/music/">Music</a></li>
+    
+      <li><a href="/artsy/">Artsy</a></li>
+    
+      <li><a href="/travel/">Travel</a></li>
+    
+      <li><a href="/arch/">Arch</a></li>
+    
+      <li><a href="/masters/">Masters Tribute Page</a></li>
+    
+  </ul>
+</nav>
+
+      <main id="content">
+        
+<section class="card prose"><div class="frame"><div class="panel"><h2 class="label">Bike</h2>
+  <div class="media wide">
+    <a class="thumb" href="/img/i89-HSKB2e-2000.webp" data-lightbox="harley2">
+      <img src="/img/i89-HSKB2e-400.webp" alt="Harley 1" sizes="(max-width: 600px) 90vw, 300px" loading="lazy" decoding="async" width="400" height="310" srcset="/img/i89-HSKB2e-400.webp 400w, /img/i89-HSKB2e-800.webp 800w, /img/i89-HSKB2e-1600.webp 1600w">
+    </a>
+    <div>
       <p>
-        <a href="http://twitch.tv/lambda_cd" target="_blank" style="border-bottom:0"><i class="fa fa-twitch w3-margin-right w3-hover-opacity w3-large w3-text-deep-orange"></i></a>
-        <a href="https://www.youtube.com/channel/UCQUqjj5SfL9vfJxJ53ygN7w" target="_blank" style="border-bottom:0"><i class="fa fa-youtube w3-margin-right w3-hover-opacity w3-large w3-text-deep-orange"></i></a>
-        <a href="https://www.facebook.com/caner.derici.3" target="_blank" style="border-bottom:0"><i class="fa fa-facebook-official w3-margin-right w3-hover-opacity w3-large w3-text-deep-orange"></i></a>
-        <a href="https://www.instagram.com/caner.derici/" target="_blank" style="border-bottom:0"><i class="fa fa-instagram w3-margin-right w3-hover-opacity w3-large w3-text-deep-orange"></i></a>
-        <a href="https://tr.linkedin.com/in/caner-derici-0619b0aa" target="_blank" style="border-bottom:0"><i class="fa fa-linkedin w3-margin-right w3-hover-opacity w3-large w3-text-deep-orange"></i></a>
-        <a href="https://twitter.com/canerderici" target="_blank" style="border-bottom:0"><i class="fa fa-twitter w3-margin-right w3-hover-opacity w3-large w3-text-deep-orange"></i></a>
+        I've been riding motorcycles over the years for various reasons. It was mostly a daily commute for
+        me back when I was living in Turkey. After a long break since I moved to the US in 2015, I
+        finally decided to get back to it and get a motorcycle, this time mostly for recreation.
+      </p>
+      <p>
+        So I took some classes like <a href="https://slccmotorcycleregistration.com/returning-riders">the returning rider course</a>
+        from community college to help remember riding. Then I bought a
+        <a href="https://www.harley-davidson.com/us/en/motorcycles/fat-boy.html">Harley-Davidson Fat Boy 114</a>.
+        It's substantially larger than my previous bikes—~700lbs (317kg) with a 114ci (1868cc) engine—so I was a bit nervous,
+        but it’s been a smooth experience. I often use it to go to the gym or ride around with my wife (season permitting).
       </p>
     </div>
   </div>
-</div>
 
-<br>
-<a href="#" class="back-to-top" style="border-bottom:0">
-  <i class="fa fa-chevron-circle-up w3-text-deep-orange w3-xlarge"></i>
-</a>
+  <p>Here are some more pictures, including rides around Utah (e.g., Park City):</p>
+  <div class="gallery">
+    <a class="thumb" href="/img/7wMVGyO-bp-2000.webp" data-lightbox="harley2"><img src="/img/7wMVGyO-bp-400.webp" alt="Harley 2" sizes="(max-width: 600px) 45vw, 260px" loading="lazy" decoding="async" width="400" height="300" srcset="/img/7wMVGyO-bp-400.webp 400w, /img/7wMVGyO-bp-800.webp 800w, /img/7wMVGyO-bp-1600.webp 1600w"></a>
+    <a class="thumb" href="/img/0UYHGJGeBb-2000.webp" data-lightbox="harley2"><img src="/img/0UYHGJGeBb-400.webp" alt="Harley with Jenny 1" sizes="(max-width: 600px) 45vw, 260px" loading="lazy" decoding="async" width="400" height="533" srcset="/img/0UYHGJGeBb-400.webp 400w, /img/0UYHGJGeBb-800.webp 800w, /img/0UYHGJGeBb-1600.webp 1600w"></a>
+    <a class="thumb" href="/img/WzRP0hqqAI-2000.webp" data-lightbox="harley2"><img src="/img/WzRP0hqqAI-400.webp" alt="Harley with Jenny 2" sizes="(max-width: 600px) 45vw, 260px" loading="lazy" decoding="async" width="400" height="534" srcset="/img/WzRP0hqqAI-400.webp 400w, /img/WzRP0hqqAI-800.webp 800w, /img/WzRP0hqqAI-1600.webp 1600w"></a>
+    <a class="thumb" href="/img/zWJR-1d-Y1-2000.webp" data-lightbox="harley3"><img src="/img/cDtBC344FT-400.webp" alt="Harley 3" sizes="(max-width: 600px) 45vw, 260px" loading="lazy" decoding="async" width="400" height="257" srcset="/img/cDtBC344FT-400.webp 400w, /img/cDtBC344FT-800.webp 800w, /img/cDtBC344FT-1201.webp 1201w"></a>
+  </div>
 
+  <div class="insta">
+    <blockquote class="instagram-media" data-instgrm-captioned="" data-instgrm-permalink="https://www.instagram.com/p/CuH7rjROb8n/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14">
+    </blockquote>
+    <script async="" src="https://www.instagram.com/embed.js"></script>
+  </div>
 
+  <p>
+    And here are some pictures of my old bikes that I used to ride back in Turkey. The one on the left is a
+    Regal Raptor DD-250E-10 (“Spider 250”), a very nice-looking bike with a long fork (turns like a semi 🙂
+    ). On the right is a Hyosung GV250 cruiser, which was a much better ride than the Spider in
+    terms of build quality and drivetrain. My brother rode ~700–800 km (~500 miles) with that model (his own bike),
+    and I did a ~1,400 km (~800 miles) trip with mine before eventually selling it when I moved to the US.
+  </p>
+  <div class="gallery">
+    <a class="thumb" href="/img/xA_KEcSbzC-427.webp" data-lightbox="oldbikes"><img src="/img/xA_KEcSbzC-400.webp" alt="Hyosung GV250" sizes="(max-width: 600px) 45vw, 260px" loading="lazy" decoding="async" width="400" height="376"></a>
+    <a class="thumb" href="/img/pMeKzO1qY2-1047.webp" data-lightbox="oldbikes"><img src="/img/pMeKzO1qY2-400.webp" alt="Regal Raptor Spider 250" sizes="(max-width: 600px) 45vw, 260px" loading="lazy" decoding="async" width="400" height="442" srcset="/img/pMeKzO1qY2-400.webp 400w, /img/pMeKzO1qY2-800.webp 800w, /img/pMeKzO1qY2-1047.webp 1047w"></a>
+  </div>
+</div></div></section>
+
+      </main>
     </div>
 
-    <!-- Right column -->
-    <div class="w3-threequarter">
-      
-<div class="w3-bar">
-  
+    <footer class="site-footer">© 2026 Caner Derici, PhD</footer>
+  </div>
 
-  
-    
-    
+  <button class="to-top" type="button" aria-label="Back to top"><svg class="icon icon-arrow-up" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path></svg></button>
+  <a class="look-switch" href="/classic/bike/" title="See this page in the old design"><svg class="icon icon-history" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path><path d="M12 7v5l4 2"></path></svg>Old look</a>
+  <dialog class="lightbox" aria-label="Photo viewer">
+    <figure>
+      <img alt="">
+      <figcaption><span class="lb-caption"></span><span class="lb-count"></span></figcaption>
+    </figure>
+    <button class="lb-btn lb-prev" type="button" aria-label="Previous photo"><svg class="icon icon-chevron-left" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg></button>
+    <button class="lb-btn lb-next" type="button" aria-label="Next photo"><svg class="icon icon-chevron-right" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg></button>
+    <button class="lb-btn lb-close" type="button" aria-label="Close"><svg class="icon icon-close" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button>
+  </dialog>
 
-    <a href="/"
-       class="w3-bar-item w3-button w3-mobile w3-round-medium w3-hover-deep-orange "
-       >
-      Home
-    </a>
-  
-    
-    
-
-    <a href="/cv/"
-       class="w3-bar-item w3-button w3-mobile w3-round-medium w3-hover-deep-orange "
-       >
-      Resume/CV
-    </a>
-  
-    
-    
-
-    <a href="/homelab/"
-       class="w3-bar-item w3-button w3-mobile w3-round-medium w3-hover-deep-orange "
-       >
-      HomeLab
-    </a>
-  
-    
-    
-
-    <a href="/content/"
-       class="w3-bar-item w3-button w3-mobile w3-round-medium w3-hover-deep-orange "
-       >
-      Building a Community
-    </a>
-  
-    
-    
-
-    <a href="/bike/"
-       class="w3-bar-item w3-button w3-mobile w3-round-medium w3-hover-deep-orange w3-deep-orange"
-       aria-current="page">
-      Bike
-    </a>
-  
-    
-    
-
-    <a href="/music/"
-       class="w3-bar-item w3-button w3-mobile w3-round-medium w3-hover-deep-orange "
-       >
-      Music
-    </a>
-  
-    
-    
-
-    <a href="/artsy/"
-       class="w3-bar-item w3-button w3-mobile w3-round-medium w3-hover-deep-orange "
-       >
-      Artsy
-    </a>
-  
-    
-    
-
-    <a href="/travel/"
-       class="w3-bar-item w3-button w3-mobile w3-round-medium w3-hover-deep-orange "
-       >
-      Travel
-    </a>
-  
-    
-    
-
-    <a href="/arch/"
-       class="w3-bar-item w3-button w3-mobile w3-round-medium w3-hover-deep-orange "
-       >
-      Arch
-    </a>
-  
-    
-    
-
-    <a href="/masters/"
-       class="w3-bar-item w3-button w3-mobile w3-round-medium w3-hover-deep-orange "
-       >
-      Masters Tribute Page
-    </a>
-  
-</div>
-
-
-      <div class="w3-container w3-card caner-card w3-margin-bottom w3-animate-opacity w3-round-large">
-        <h2 class="w3-text-grey w3-padding-16">
-          <i class="fa fa-motorcycle fa-fw w3-margin-right w3-margin-left w3-xxxlarge w3-text-deep-orange"></i>
-          Bike
-        </h2>
-
-        <div style="display: flex; padding: 10px;">
-          <a href="/assets/img/bike/harley1-min.jpg" data-lightbox="harley2" class="lnk">
-            <img src="/assets/img/bike/harley1-min.jpg" width="300" style="margin-right: 20px; height: auto;" alt="Harley 1"/>
-          </a>
-
-          <p style="margin-top: -5px;">
-            I've been riding motorcycles over the years for various reasons. It was mostly a daily commute for
-            me back when I was living in Turkey. After a long break since I moved to the US in 2015, I
-            finally decided to get back to it and get a motorcycle, this time mostly for recreation.
-            <br>
-            So I took some classes like <a href="https://slccmotorcycleregistration.com/returning-riders" class="lnk">the returning rider course</a>
-            from community college to help remember riding. Then I bought a
-            <a href="https://www.harley-davidson.com/us/en/motorcycles/fat-boy.html" class="lnk">Harley-Davidson Fat Boy 114</a>.
-            It's substantially larger than my previous bikes—~700lbs (317kg) with a 114ci (1868cc) engine—so I was a bit nervous,
-            but it’s been a smooth experience. I often use it to go to the gym or ride around with my wife (season permitting).
-          </p>
-        </div>
-
-        <p>
-          Here are some more pictures, including rides around Utah (e.g., Park City):
-        </p>
-
-        <div style="text-align: center; width: 100%;">
-          <a href="/assets/img/bike/harley2-min.jpg" data-lightbox="harley2" class="lnk">
-            <img src="/assets/img/bike/harley2-min.jpg" width="300" style="margin-right: 20px; height: auto;" alt="Harley 2"/>
-          </a>
-          <a href="/assets/img/bike/harley-jenny1-min.jpg" data-lightbox="harley2" class="lnk">
-            <img src="/assets/img/bike/harley-jenny1-min.jpg" width="200" style="margin-right: 50px; height: auto; margin-bottom: 20px;" alt="Harley with Jenny 1"/>
-          </a>
-          <a href="/assets/img/bike/harley-jenny2-min.jpg" data-lightbox="harley2" class="lnk">
-            <img src="/assets/img/bike/harley-jenny2-min.jpg" width="200" style="margin-right: 50px; height: auto; margin-top: -15px;" alt="Harley with Jenny 2"/>
-          </a>
-          <a href="/assets/img/bike/harley3-min.jpg" data-lightbox="harley3" class="lnk">
-            <img src="/assets/img/bike/harley3-cropped.jpg" width="400" style="margin-right: 10px; height: auto; margin-bottom: 20px;" alt="Harley 3"/>
-          </a>
-        </div>
-
-        <center>
-          <!-- Instagram embed -->
-          <blockquote class="instagram-media"
-                      data-instgrm-captioned
-                      data-instgrm-permalink="https://www.instagram.com/p/CuH7rjROb8n/?utm_source=ig_embed&amp;utm_campaign=loading"
-                      data-instgrm-version="14"
-                      style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);
-                             margin:1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
-          </blockquote>
-          <script async src="//www.instagram.com/embed.js"></script>
-        </center>
-
-        <p>
-          And here are some pictures of my old bikes that I used to ride back in Turkey. The one on the left is a
-          Regal Raptor DD-250E-10 (“Spider 250”), a very nice-looking bike with a long fork (turns like a semi 🙂
-          ). On the right is a Hyosung GV250 cruiser, which was a much better ride than the Spider in
-          terms of build quality and drivetrain. My brother rode ~700–800 km (~500 miles) with that model (his own bike),
-          and I did a ~1,400 km (~800 miles) trip with mine before eventually selling it when I moved to the US.
-        </p>
-
-        <div style="text-align: center;">
-          <a href="/assets/img/bike/hyosung.jpg" data-lightbox="oldbikes" class="lnk">
-            <img src="/assets/img/bike/hyosung.jpg" width="200" style="margin-right: 50px; height: auto; margin-bottom: 20px;" alt="Hyosung GV250"/>
-          </a>
-          &nbsp;
-          <a href="/assets/img/bike/raptor.jpg" data-lightbox="oldbikes" class="lnk">
-            <img src="/assets/img/bike/raptor.jpg" width="200" style="margin-right: 20px; height: auto;" alt="Regal Raptor Spider 250"/>
-          </a>
-        </div>
-
-        <br><br>
-      </div>
-
-      <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
-    </div><!-- /w3-threequarter -->
-
-  </div><!-- /w3-row-padding -->
-</div><!-- /w3-content -->
-
-
-  </main>
-  <footer class="w3-container w3-right">
-  <small>
-    © 2026 Caner Derici, PhD
-  </small>
-</footer>
-
-
-  
-  <script src="/assets/js/jquery-1.11.0.min.js"></script>
-  <script src="/assets/js/lightbox.min.js"></script>
-  <script src="/assets/js/caner.js"></script>
 </body>
 </html>
